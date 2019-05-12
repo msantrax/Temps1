@@ -10,8 +10,10 @@
       "prefix": "app",
       "schematics": {},
       "architect": {
+
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+
           "options": {
             "outputPath": "dist/NGGraph",
             "index": "src/index.html",
@@ -44,6 +46,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+
               "budgets": [
                 {
                   "type": "initial",
