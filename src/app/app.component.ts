@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation  } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,11 @@ export class AppComponent {
 
   title = 'NGGraph';
 
+
+
+
   constructor() {
+
 
 
   }
@@ -19,8 +23,9 @@ export class AppComponent {
   ngOnInit() {
 
   }
-  
-}
 
+
+
+}
 
 
