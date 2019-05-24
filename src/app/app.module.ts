@@ -1,31 +1,66 @@
+
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
+import {LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
 
 
+import {MatNativeDateModule} from '@angular/material/core';
+
+import {APP_ROUTES} from './routes';
 import {AppComponent} from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppNavComponent } from './app-nav/app-nav.component';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+
+import {HomepageModule} from './pages/homepage';
+import {FooterModule} from './shared/footer/footer';
+import {NavBarModule} from './shared/navbar';
+import {ThemePickerModule} from './shared/theme-picker';
+import {StyleManager} from './shared/style-manager';
+import {ComponentPageTitle} from './pages/page-title/page-title';
+
+import {SvgViewerModule} from './shared/svg-viewer/svg-viewer';
+
+import {DocumentationItems} from './shared/documentation-items/documentation-items';
+import {GaService} from './shared/ga/ga';
+
 
 @NgModule({
+
   declarations: [
     AppComponent,
-    AppNavComponent
+
+
   ],
+
+
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(APP_ROUTES),
+
+    HomepageModule,
+    NavBarModule,
+    FooterModule,
+    SvgViewerModule,
+    ThemePickerModule,
+
   ],
-  providers: [],
+
+  providers: [
+    ComponentPageTitle,
+    DocumentationItems,
+    StyleManager,
+    GaService,
+  ],
+
   bootstrap: [AppComponent],
-  // schemas : [CUSTOM_ELEMENTS_SCHEMA]
+
 })
+
 export class AppModule {
+
 }
