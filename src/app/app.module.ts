@@ -25,12 +25,16 @@ import {SvgViewerModule} from './shared/svg-viewer/svg-viewer';
 import {DocumentationItems} from './shared/documentation-items/documentation-items';
 import {GaService} from './shared/ga/ga';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {UsageContractModule} from "./pages/usage-contract/usage-contract.component";
+import {PrivacyPoliciesModule} from "./pages/privacy-policies/privacy-policies.component";
+
+
 
 @NgModule({
 
   declarations: [
     AppComponent,
-
 
   ],
 
@@ -40,6 +44,8 @@ import {GaService} from './shared/ga/ga';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    FlexLayoutModule,
+
     RouterModule.forRoot(APP_ROUTES),
 
     HomepageModule,
@@ -47,6 +53,9 @@ import {GaService} from './shared/ga/ga';
     FooterModule,
     SvgViewerModule,
     ThemePickerModule,
+    UsageContractModule,
+    PrivacyPoliciesModule
+
 
   ],
 

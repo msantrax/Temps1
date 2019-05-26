@@ -4,6 +4,17 @@
   margin-top: 40px;
 }
 
+.docs-footer-footer{
+  font-size: 12px;
+  //background : #4e555b;
+
+
+  &:hover {
+      //text-decoration: underline;
+    font-size: 16px;
+  }
+}
+
 .docs-footer-list {
   align-items: center;
   display: flex;
@@ -11,9 +22,14 @@
   padding: 8px;
 }
 
+
+
+
 .docs-footer-logo {
   flex: 1;
 }
+
+
 
 .docs-footer-angular-logo {
   height: 50px;

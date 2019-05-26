@@ -1,23 +1,50 @@
-<footer class="docs-footer"
-        [class.is-next-version]="isNextVersion">
-  <div class="docs-footer-list">
-    <div class="docs-footer-logo">
-      <div class="footer-logo">
-        <img class="docs-footer-angular-logo"
-          src="../../../assets/img/homepage/angular-white-transparent.svg"
-          alt="angular">
-        <span><a href="https://angular.io">Learn Angular</a></span>
-      </div>
-    </div>
+<div fxLayout="column" fxLayoutWrap fxLayoutGap="0.5%" class="docs-footer" [class.is-next-version]="isNextVersion">
 
-    <div class="docs-footer-version">
-      <span class="version">Current Version: {{version}}</span>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+    <div fxFlex="20%" >
+      <img class="docs-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">
     </div>
-
-    <div class="docs-footer-copyright">
-      <span>Powered by Google ©2010-2019.</span>
-      <span>Code licensed under an MIT-style License.</span>
-      <span>Documentation licensed under CC BY 4.0.</span>
+    <div fxFlex="20%">
+      <img class="docs-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">
+    </div>
+    <div fxFlex="20%">
+      <img class="docs-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">
+    </div>
+    <div fxFlex="20%">
+      <img class="docs-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">
     </div>
   </div>
-</footer>
+
+  <div class="docs-footer-footer" fxLayout="row" fxLayoutAlign="center">
+    <div fxFlex="20%" >
+      <a [routerLink]= "['./usage']" style="color:white">Termos de Uso</a>
+    </div>
+    <div fxFlex="20%">
+      <a [routerLink]= "['./privacy']">Politica de Privacidade</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<!--  <div class="docs-footer-list">-->
+<!--    <div class="docs-footer-logo">-->
+<!--      <div class="footer-logo">-->
+<!--        <img class="docs-footer-angular-logo" src="../../../assets/img/acplogo1.svg" alt="ACP Instruments">-->
+<!--        <span><a href="http://acpinstruments.com.br">ACP Instruments</a></span>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="docs-footer-version">-->
+<!--      <span class="version">Current Version: {{version}}</span>-->
+<!--    </div>-->
+
+<!--    <div class="docs-footer-copyright">-->
+<!--      <span>Powered by Google ©2010-2019.</span>-->
+<!--      <span>Code licensed under an MIT-style License.</span>-->
+<!--      <span>Documentation licensed under CC BY 4.0.</span>-->
+<!--    </div>-->
+<!--  </div>-->
