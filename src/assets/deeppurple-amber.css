@@ -1234,7 +1234,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   .docs-primary-header h1 {
     color: white; }
 
-.docs-footer {
+.mat-footer {
   background: #673ab7;
   color: white; }
 
@@ -1375,18 +1375,18 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 app-footer .docs-footer-links a {
   color: white; }
 
-app-homepage .docs-header-background {
+app-homepage .mat-header-background {
   background: #673ab7; }
-app-homepage .docs-header-headline {
+app-homepage .mat-header-headline {
   color: white; }
-app-homepage .docs-header-start {
+app-homepage .mat-header-start {
   color: #673ab7; }
-app-homepage .docs-homepage-row {
+app-homepage .mat-homepage-row {
   color: rgba(0, 0, 0, 0.54); }
 
 app-navbar {
   color: white; }
-  app-navbar .docs-navbar, app-navbar .docs-navbar-header {
+  app-navbar .mat-navbar, app-navbar .mat-navbar-header {
     background: #673ab7; }
 
 /*# sourceMappingURL=deeppurple-amber.css.map */

@@ -1,10 +1,10 @@
 <!-- TODO: figure out if the <nav> should go inside of a <header> element. -->
-<nav class="docs-navbar-header" [class.is-next-version]="isNextVersion">
+<nav class="mat-navbar-header" [class.is-next-version]="isNextVersion">
   
   <a mat-button class="docs-button" routerLink="/" aria-label="SorptionLab">
-    <img class="docs-angular-logo"
+    <img class="mat-sorption-logo"
          src="../../../assets/img/homepage/sorption1_isk.svg"
-         alt="angular">
+         alt="SorptionLab">
     <span>SorptionLab</span>
   </a>
   
@@ -19,29 +19,33 @@
 
 <!--  <version-picker></version-picker>-->
   <theme-picker></theme-picker>
-  
+
+
+
   <a mat-button class="docs-button docs-navbar-hide-small" href="https://github.com/angular/components"
      aria-label="GitHub Repository">
-    <img class="docs-angular-logo"
+    <img class="mat-sorption-logo"
          src="../../../assets/img/homepage/github-circle-white-transparent.svg"
          alt="angular">
     GitHub
   </a>
   
-  <a mat-icon-button class="docs-button docs-navbar-show-small"
+  <a mat-icon-button class="docs-button mat-navbar-show-small"
      href="https://github.com/angular/components" aria-label="GitHub Repository">
-    <img class="docs-angular-logo"
+    <img class="mat-sorption-logo"
          src="../../../assets/img/homepage/github-circle-white-transparent.svg"
          alt="angular">
   </a>
   
 </nav>
 
-<nav class="docs-navbar docs-navbar-show-small">
-  <a mat-button class="docs-navbar-link"
+
+
+<nav class="mat-navbar mat-navbar-show-small">
+  <a mat-button class="mat-navbar-link"
     *ngFor="let key of sectionKeys"
     [routerLink]="key">{{sections[key].name}}</a>
-  <a mat-button class="docs-navbar-link" routerLink="guides">Guides</a>
+  <a mat-button class="mat-navbar-link" routerLink="guides">Guides</a>
 </nav>
 
 

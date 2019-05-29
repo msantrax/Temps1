@@ -1,26 +1,28 @@
-<div fxLayout="column" fxLayoutWrap fxLayoutGap="0.5%" class="docs-footer" [class.is-next-version]="isNextVersion">
+<div fxLayout="column" fxLayoutWrap fxLayoutGap="0.5%" class="mat-footer" [class.is-next-version]="isNextVersion">
 
   <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
-    <div fxFlex="20%" >
-      <img class="docs-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">
+
+    <div fxFlex="30%" class="mat-footer-acp-logo">
+      <img class="mat-footer-acp-logo"
+           src="../../../assets/img/acplogo3.svg" alt="ACP Instruments"
+           href="http://acpinstruments.com.br"
+      >
     </div>
-    <div fxFlex="20%">
-      <img class="docs-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">
-    </div>
-    <div fxFlex="20%">
-      <img class="docs-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">
-    </div>
-    <div fxFlex="20%">
-      <img class="docs-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">
+
+    <div fxFlex="50%">
+          <p class="mission-text" >{{mission}}</p>
     </div>
   </div>
 
-  <div class="docs-footer-footer" fxLayout="row" fxLayoutAlign="center">
+  <div class="mat-footer-callband" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center">
     <div fxFlex="20%" >
-      <a [routerLink]= "['./usage']" style="color:white">Termos de Uso</a>
+      <a [routerLink]= "['./usage']" style="color:white;text-decoration:initial">Fale Conosco</a>
+    </div>
+    <div fxFlex="20%" >
+      <a [routerLink]= "['./usage']" style="color:white;text-decoration:initial">Termos de Uso</a>
     </div>
     <div fxFlex="20%">
-      <a [routerLink]= "['./privacy']">Politica de Privacidade</a>
+      <a [routerLink]= "['./privacy']" style="color:white;text-decoration:initial">Politica de Privacidade</a>
     </div>
 
   </div>
@@ -48,3 +50,19 @@
 <!--      <span>Documentation licensed under CC BY 4.0.</span>-->
 <!--    </div>-->
 <!--  </div>-->
+
+
+
+
+<!--    <div fxFlex="20%" >-->
+<!--      <img class="mat-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">-->
+<!--    </div>-->
+<!--    <div fxFlex="20%">-->
+<!--      <img class="mat-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">-->
+<!--    </div>-->
+<!--    <div fxFlex="20%">-->
+<!--      <img class="mat-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">-->
+<!--    </div>-->
+<!--    <div fxFlex="20%">-->
+<!--      <img class="mat-footer-angular-logo" src="../../../assets/img/sorption1_isk.svg" alt="ACP Instruments">-->
+<!--    </div>-->

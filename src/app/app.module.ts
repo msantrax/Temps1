@@ -7,11 +7,10 @@ import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 
-
 import {MatNativeDateModule} from '@angular/material/core';
 
 import {APP_ROUTES} from './routes';
-import {AppComponent} from './app.component';
+import {MatApp} from './mat-app';
 
 import {HomepageModule} from './pages/homepage';
 import {FooterModule} from './shared/footer/footer';
@@ -30,11 +29,14 @@ import {UsageContractModule} from "./pages/usage-contract/usage-contract.compone
 import {PrivacyPoliciesModule} from "./pages/privacy-policies/privacy-policies.component";
 
 
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
 
   declarations: [
-    AppComponent,
+    MatApp,
 
   ],
 
@@ -48,6 +50,8 @@ import {PrivacyPoliciesModule} from "./pages/privacy-policies/privacy-policies.c
 
     RouterModule.forRoot(APP_ROUTES),
 
+    AngularFireModule.initializeApp(environment.firebase, 'sorptionlab'),
+
     HomepageModule,
     NavBarModule,
     FooterModule,
@@ -55,6 +59,7 @@ import {PrivacyPoliciesModule} from "./pages/privacy-policies/privacy-policies.c
     ThemePickerModule,
     UsageContractModule,
     PrivacyPoliciesModule
+
 
 
   ],
@@ -66,7 +71,7 @@ import {PrivacyPoliciesModule} from "./pages/privacy-policies/privacy-policies.c
     GaService,
   ],
 
-  bootstrap: [AppComponent],
+  bootstrap: [MatApp],
 
 })
 

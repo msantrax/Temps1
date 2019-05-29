@@ -15,6 +15,11 @@ export class Footer {
 
   version = materialVersion;
 
+  mission = "O servidor SorptionLab é uma iniciativa da ACP Instruments Ltda.\
+  visando proporcionar a pesquisadores e profissionais da área de instrumentação \
+  analítica um ambiente de trabalho e ferramentas de cálculo que possibilitem o desenvolvimento \
+  de melhores técnicas de análise de dados obtidos por ensaios de testes por adsorção de gases. \
+  Participe também !"
 
 }
 
