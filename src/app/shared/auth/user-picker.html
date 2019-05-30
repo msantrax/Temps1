@@ -1,0 +1,17 @@
+<button mat-icon-button [mat-menu-trigger-for]="userMenu" matTooltip="Login no Servidor" tabindex="-1">
+<!--  <mat-icon>person</mat-icon>-->
+  <img src={{getAvatar()}} class = "user-icon-round" style="width:24px;height:24px;" alt=""  />
+
+</button>
+
+<!-- TODO: replace use of `mat-menu` here with a custom overlay -->
+<mat-menu class="docs-theme-picker-menu" #userMenu="matMenu" x-position="before">
+  <div *ngIf="afAuth.user | async as user; else showLogin">
+      <h3>Olá {{ user.displayName }}!</h3>
+      <button (click)="afAuth.logout()">Logout</button>
+  </div>
+  <ng-template #showLogin>
+    <p>Benvindo !</p>
+    <button (click)="afAuth.loginGoogle()">Login with Google</button>
+  </ng-template>
+</mat-menu>

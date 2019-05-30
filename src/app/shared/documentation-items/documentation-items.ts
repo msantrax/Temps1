@@ -20,27 +20,28 @@ export interface DocSection {
   summary: string;
 }
 
-const CDK = 'cdk';
-const COMPONENTS = 'components';
+const SANDBOX = 'sandbox';
+const SERVER = 'server';
+
+
 export const SECTIONS: {[key: string]: DocSection} = {
-  [COMPONENTS]: {
-    name: 'Components',
-    summary: 'Angular Material comprises a range of components which implement common ' +
-    'interaction patterns according to the Material Design specification.'
+  [SANDBOX]: {
+    name: 'Sandbox',
+    summary: 'Área de testes para implementação dos serviços de cálculo e administração do sistema'
   },
-  [CDK]: {
-    name: 'CDK',
-    summary: 'The Component Dev Kit (CDK) is a set of tools that implement common interaction ' +
+  [SERVER]: {
+    name: 'Server',
+    summary: 'The Component Dev Kit (SERVER) is a set of tools that implement common interaction ' +
     'patterns whilst being unopinionated about their presentation. It represents an abstraction ' +
     'of the core functionalities found in the Angular Material library, without any styling ' +
-    'specific to Material Design. Think of the CDK as a blank state of well-tested functionality ' +
-    'upon which you can develop your own bespoke components.'
+    'specific to Material Design. Think of the SERVER as a blank state of well-tested functionality ' +
+    'upon which you can develop your own bespoke SANDBOX.'
   },
 };
 
 
 const DOCS: {[key: string]: DocCategory[]} = {
-  [COMPONENTS]: [
+  [SANDBOX]: [
     {
       id: 'forms',
       name: 'Form Controls',
@@ -325,7 +326,7 @@ const DOCS: {[key: string]: DocCategory[]} = {
     {
       id: 'modals',
       name: 'Popups & Modals',
-      summary: 'Floating components that can be dynamically shown or hidden.',
+      summary: 'Floating SANDBOX that can be dynamically shown or hidden.',
       items: [
         {
           id: 'bottom-sheet',
@@ -405,7 +406,7 @@ const DOCS: {[key: string]: DocCategory[]} = {
       ]
     }
   ],
-  [CDK] : [
+  [SERVER] : [
     {
       id: 'component-composition',
       name: 'Common Behaviors',
@@ -428,14 +429,14 @@ const DOCS: {[key: string]: DocCategory[]} = {
           name: 'Drag and Drop',
           summary: 'Directives enabling drag-and-drop interactions',
           examples: [
-            'cdk-drag-drop-axis-lock',
-            'cdk-drag-drop-sorting',
-            'cdk-drag-drop-overview',
-            'cdk-drag-drop-horizontal-sorting',
-            'cdk-drag-drop-custom-preview',
-            'cdk-drag-drop-root-element',
-            'cdk-drag-drop-handle',
-            'cdk-drag-drop-connected-sorting',
+            'SERVER-drag-drop-axis-lock',
+            'SERVER-drag-drop-sorting',
+            'SERVER-drag-drop-overview',
+            'SERVER-drag-drop-horizontal-sorting',
+            'SERVER-drag-drop-custom-preview',
+            'SERVER-drag-drop-root-element',
+            'SERVER-drag-drop-handle',
+            'SERVER-drag-drop-connected-sorting',
           ],
         },
         {
@@ -461,7 +462,7 @@ const DOCS: {[key: string]: DocCategory[]} = {
           name: 'Platform',
           summary: 'Provides information about the user\'s platform.',
           examples: [
-            'cdk-platform-overview',
+            'SERVER-platform-overview',
           ]
         },
         {
@@ -485,9 +486,9 @@ const DOCS: {[key: string]: DocCategory[]} = {
       ]
     },
     {
-      id: 'components',
-      name: 'Components',
-      summary: 'Unstyled components with useful functionality.',
+      id: 'SANDBOX',
+      name: 'SANDBOX',
+      summary: 'Unstyled SANDBOX with useful functionality.',
       items: [
         {id: 'stepper',
           name: 'Stepper',
@@ -522,23 +523,23 @@ const DOCS: {[key: string]: DocCategory[]} = {
   ]
 };
 
-for (let category of DOCS[COMPONENTS]) {
+for (let category of DOCS[SANDBOX]) {
   for (let doc of category.items) {
     doc.packageName = 'material';
   }
 }
 
-for (let category of DOCS[CDK]) {
+for (let category of DOCS[SERVER]) {
   for (let doc of category.items) {
-    doc.packageName = 'cdk';
+    doc.packageName = 'SERVER';
   }
 }
 
-const ALL_COMPONENTS = DOCS[COMPONENTS].reduce(
+const ALL_SANDBOX = DOCS[SANDBOX].reduce(
   (result, category) => result.concat(category.items), []);
-const ALL_CDK = DOCS[CDK].reduce((result, cdk) => result.concat(cdk.items), []);
-const ALL_DOCS = ALL_COMPONENTS.concat(ALL_CDK);
-const ALL_CATEGORIES = DOCS[COMPONENTS].concat(DOCS[CDK]);
+const ALL_SERVER = DOCS[SERVER].reduce((result, SERVER) => result.concat(SERVER.items), []);
+const ALL_DOCS = ALL_SANDBOX.concat(ALL_SERVER);
+const ALL_CATEGORIES = DOCS[SANDBOX].concat(DOCS[SERVER]);
 
 @Injectable()
 export class DocumentationItems {
@@ -547,17 +548,17 @@ export class DocumentationItems {
   }
 
   getItems(section: string): DocItem[] {
-    if (section === COMPONENTS) {
-      return ALL_COMPONENTS;
+    if (section === SANDBOX) {
+      return ALL_SANDBOX;
     }
-    if (section === CDK) {
-      return ALL_CDK;
+    if (section === SERVER) {
+      return ALL_SERVER;
     }
     return [];
   }
 
   getItemById(id: string, section: string): DocItem {
-    const sectionLookup = section == 'cdk' ? 'cdk' : 'material';
+    const sectionLookup = section == 'SERVER' ? 'SERVER' : 'material';
     return ALL_DOCS.find(doc => doc.id === id && doc.packageName == sectionLookup);
   }
 

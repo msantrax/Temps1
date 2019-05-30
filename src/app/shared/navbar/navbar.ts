@@ -1,12 +1,13 @@
 import {Component, NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {RouterModule} from '@angular/router';
+
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
-import {RouterModule} from '@angular/router';
 import {ThemePickerModule} from '../theme-picker/theme-picker';
+import {AuthModule} from "../auth";
 
 import {SECTIONS} from '../documentation-items/documentation-items';
-
 const SECTIONS_KEYS = Object.keys(SECTIONS);
 
 @Component({
@@ -28,11 +29,15 @@ export class NavBar {
 
 @NgModule({
   imports: [
+
+    CommonModule,
+    RouterModule,
+
     MatButtonModule,
     MatMenuModule,
-    RouterModule,
+
     ThemePickerModule,
-    CommonModule
+    AuthModule
   ],
   exports: [NavBar],
   declarations: [NavBar],

@@ -3,12 +3,20 @@ import {Routes} from '@angular/router';
 import {Homepage} from "./pages/homepage";
 import {UsageContractComponent} from "./pages/usage-contract";
 import {PrivacyPoliciesComponent} from "./pages/privacy-policies";
+import {Sandbox} from "./pages/sandbox";
 
 
+export const APP_ROUTES
 
-export const APP_ROUTES: Routes = [
+: Routes = [
 
-  {path: '', component: Homepage, pathMatch: 'full', data: {}},
+  {path: '', component: Sandbox, pathMatch: 'full', data: {}},
+
+  {
+    path: 'SANDBOX',
+    component: Sandbox
+  },
+
 
   {
     path: 'usage',

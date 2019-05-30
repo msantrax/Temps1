@@ -15,6 +15,9 @@ import {MatApp} from './mat-app';
 import {HomepageModule} from './pages/homepage';
 import {FooterModule} from './shared/footer/footer';
 import {NavBarModule} from './shared/navbar';
+import {SandboxModule} from "./pages/sandbox";
+
+
 import {ThemePickerModule} from './shared/theme-picker';
 import {StyleManager} from './shared/style-manager';
 import {ComponentPageTitle} from './pages/page-title/page-title';
@@ -30,6 +33,7 @@ import {PrivacyPoliciesModule} from "./pages/privacy-policies/privacy-policies.c
 
 
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 
 
@@ -51,6 +55,7 @@ import { environment } from '../environments/environment';
     RouterModule.forRoot(APP_ROUTES),
 
     AngularFireModule.initializeApp(environment.firebase, 'sorptionlab'),
+    AngularFireAuthModule,
 
     HomepageModule,
     NavBarModule,
@@ -58,7 +63,8 @@ import { environment } from '../environments/environment';
     SvgViewerModule,
     ThemePickerModule,
     UsageContractModule,
-    PrivacyPoliciesModule
+    PrivacyPoliciesModule,
+    SandboxModule,
 
 
 
