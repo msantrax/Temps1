@@ -1,0 +1,383 @@
+{   
+    "sites" : {
+        
+        "-LWG_000000000000001" : {
+            
+            "artifactname" : "Tabela de referencia cruzada de templates de sites",
+            "artifacttype" : "sitelookup",
+            
+            "lookuptable": {
+                "Default"       : "-LXey7jGNNzGU3Sskk9a",
+                "Jeff"          : "-LXey7jGNNzGU3Sskk9a",
+                "Anfitria"      : "-LYDiC2ESxdEBTlO0-Pt",
+                "Teste1"        : "-LYDiC2ESxdEBTlO0-Pt"  
+            }    
+        },
+        
+      
+        "-LXey7jGNNzGU3Sskk9a" : {
+            
+            "artifactname" : "Hidrauservice - Site simples Jeff",
+            "artifacttype" : "site",
+            
+            "payload": {
+                "header"        : "-LYDiC2Dm85BJ4hXkjoY",
+                "land"          : "-LXey7jFThUwGEPUoxBF",
+                "footer"        : "-LXey7jHb400Cx3NwKmZ"
+                
+            }
+                                                  
+        },
+        
+        "-LYDiC2ESxdEBTlO0-Pt" : {
+            
+            "artifactname" : "Site Anfitria - Base",
+            "artifacttype" : "site",
+            
+            "payload": {
+                "header"        : "-LXey7jECquW1SV6YVEQ",
+                "land"          : "-LYDiC210Ph8Le_qXY3e",
+                "footer"        : "-LYDiC1yJ4GxDueEPqfU"
+                
+            }
+                                                  
+        }
+        
+    
+    },
+    
+    
+    "pages" :{
+        
+        "-LWG_000000000000000" : {
+            
+            "artifactname" : "Erro 404 - página não encontrada",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_widgetnotfound",
+            
+            "payload": {
+            }                                      
+        },
+        
+        
+        "-LXey7jFThUwGEPUoxBF" : {
+            
+            "artifactname"  : "Landing page - Jeff",
+            "artifacttype"  : "page",
+            "landpoint"    : "ctrlland",
+            "component"     : "w_jland",
+            
+            "payload": {               
+                "artifacts" : [
+                                 
+                ]
+            }                                          
+        },
+        
+        "-LYDiC210Ph8Le_qXY3e" : {
+            
+            "artifactname"  : "Landing Page Anfitria",
+            "artifacttype"  : "page",
+            "landpoint"    : "ctrlland",
+            "component"     : "w_land",
+            
+            "payload": {               
+                "artifacts" : [
+                    {"-LWG_ppZDHg8mln4OgZh" : "container1"},
+                    {"-LWG_rWTHPbWm--PKUtr" : "container1"},
+                    {"-LXey7j5jZOck3WWJcUG" : "container1"},
+                    {"-LYDiC1wNfAaSt2YJuhQ" : "container1"}
+                ]
+            }                                          
+        }
+     
+    },
+    
+    
+    
+    
+    "artifacts" : { 
+       
+        "-LXey7jHb400Cx3NwKmZ" : {
+        
+            "artifactname" : "footer - Jeff - frame inicial",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_jfooter",
+
+            "payload" :{
+                
+            }
+        },
+     
+            
+        "-LYDiC1yJ4GxDueEPqfU" : {
+        
+            "artifactname" : "footer - Anfitria base",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_footer",
+
+            "payload" :{
+            
+            }
+        },
+    
+    
+        "-LYDiC2Dm85BJ4hXkjoY" : {
+        
+            "artifactname" : "Header navbar - Jeff frame inicial",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_jheader",
+
+            "payload" :{
+                
+            }
+        },
+    
+    
+        "-LXey7jECquW1SV6YVEQ" : {
+        
+            "artifactname" : "Header navbar - Anfitria",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_header",
+
+            "payload" :{
+
+                "logo":{
+                    "picture" : "assets/images/hsv/Logo_vermelho.png",
+                    "alt" : "Logo"
+                },   
+
+                "search":{
+                    "picture" : "assets/images/hsv_loga_200x72.jpeg",
+                    "alt" : "Logo"
+                },
+
+                "help":{
+                    "picture" : "assets/images/hsv_loga_200x72.jpeg",
+                    "alt" : "Logo"
+                },
+
+                "artifacts" : [
+
+                    {
+                        "artifactname" : "megamenu",
+                        "class": "mega-menu",
+                        "icon" : true,
+                        "iconref" : "fa fa-ellipsis-v",
+                        "iconstyle" : "",
+                        "payload" : {}                               
+                    },
+
+                    {
+                        "artifactname" : "loginmenu",
+                        "class" : "list-inline-item header-button-arrow",
+                        "icon" : false,
+                        "iconref" : "rounded-circle",
+                        "iconstyle" : "width:20px;height:20px;",
+                        "payload" : {}
+                    },
+
+                    {
+                        "artifactname" : "notifications",
+                        "class" : "list-inline-item header-button-arrow",
+                        "icon" : true,
+                        "iconref" : "fa fa-bell",
+                        "iconstyle" : "",
+                        "payload" : {}
+                    }
+                ] 
+            }
+        },
+    
+    
+    
+    
+        
+        "-LXey7jJluUJQlAtjyTa" : {
+            
+            "artifactname" : "template1",
+            "artifacttype" : "template",
+            "landpoint"    : "",
+            
+            "payload": {
+                "code"      : "<section class=\"page-header\"> <div class=\"container\"> <h1><b>COMUNIQUE-SE DE FORMA EFICIENTE<\/b><\/h1> <ol class=\"breadcrumb\"><li><a href=\"#\">Controle<\/a><\/li> <li class=\"active\">{{teststring}}<\/li><\/ol><\/div><\/section>"
+         
+            }
+                                                  
+        },
+        
+        "-LXey7jKZLDdMnM-VTQv" : {
+            
+            "artifactname" : "template3",
+            "artifacttype" : "template",
+            "landpoint"    : "",
+            
+            
+            "payload": {
+                "templateUrl"   : "assets/templates/template1.html",
+                "templateCode"  : "<section class=\"info-bar info-bar-clean\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-sm-6\">\r\n                <i class=\"glyphicon glyphicon-user\"><\/i>\r\n                <h3>EXATAMENTE SUAS NECESSIDADES<\/h3>\r\n                <p class=\"fs-11\">Aqui \u00E9 voc\u00EA que decide o que o sistema faz. Configure voc\u00EA mesmo ou diga como quer que funcione.<\/p>\r\n            <\/div>\r\n            <div class=\"col-sm-6\">\r\n                <i class=\"glyphicon glyphicon-usd\"><\/i>\r\n                <h3>TEMPO + CONHECIMENTO = VALOR<\/h3>\r\n                <p class=\"fs-11\">Use seus recursos pessoais de forma otimizada. Deixe que o Controle cuide dos detalhes com precis\u00E3o.<\/p>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n<\/section>"
+            
+            }
+                                                  
+        },
+        
+        "-LXey7jLhz9f9OOIXzrl" : {
+            
+            "artifactname" : "template2",
+            "artifacttype" : "template",
+            "landpoint"    : "",
+            
+            "payload": {
+                "templateCode"      : "<section class=\"info-bar info-bar-clean\"> <div class=\"container\"> <div class=\"row\"> <div class=\"col-sm-4\"> <template #widgetContainer1></template> <\/div> <div class=\"col-sm-4\"> <template #widgetContainer2></template> <\/div><\/div> <\/div> <\/section>" 
+            }
+                                                  
+        },
+        
+              
+        "-LWG_ppZDHg8mln4OgZh" : {
+            
+            "artifactname" : "w_infobar",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_land",
+            
+            "payload": {
+                "header"    : "Info Bar header"
+            }
+                                                  
+        },
+        
+        "-LWG_rWTHPbWm--PKUtr" : {
+            
+            "artifactname" : "w_subject",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_land",
+            
+            "payload": {
+                "options" : {
+                    "items" : 1, "dots" : true, "nav" : false,
+                    "autoplay" : true, "loop" : true, "autoplayTimeout" : 15000,
+                    "animateIn" : "zoomIn", "animateOut" : "zoomOut",
+                    "autoplayHoverPause" :true
+                },
+
+                
+                "header"    : "Serviços : Cuidando de seus Equipamentos",        
+                "slimages"  :[  
+                    "../assets/images/hsv/service3.jpeg",
+                    "../assets/images/hsv/service4.jpeg",
+                    "../assets/images/hsv/service1.png",
+                    "../assets/images/hsv/service2.png"
+                ],
+                "sltext"    :[
+                    [ "Atendendo as Normas e garantindo a qualidade",
+                      "Todo equipamento deve continuar operando como novo após uma manutenção e são as normas e especificações de funcionamento que que orientam nosso trabalho.",
+                      "Nossas bancadas de teste e medição constituem fator importante na avaliação da qualidade do trabalho de recuperação de componentes e sistemas.",
+                      "Então, quando seu equipamento estiver em manutenção, fique tranquilo, estaremos de olho nas especificações do fabricante de forma a retorna-lo o melhor possível."  
+                    ],
+                    [ "Testes em condições reais de trabalho",
+                      "Equipamentos industriais são por vezes solicitados a desempenharem trabalho no limite (ou mais) de sua capacidade, e é justamente nessas horas que uma falha NÂO deve ocorrer.",
+                      "Contamos com nossas bancadas de simulação e estresse mecânico para nos informar se um determinado equipamento poderá cumprir o esforço requerido quando no máximo de suas possibilidades.",
+                      "Portanto, quando precisar ir até o limite com seu equipamento, ele já esteve lá anteriormente e não deixará voce na mão"  
+                    ],
+                    [ "Precisão no trabalho com comandos e acionamentos",
+                      "A tecnologia de acionamentos hidraulicos hoje em dia incorpora cada vez mais dispositivos sofisticados de ajuste, realimentação e loops de controle de pressões e posicionamentos.",
+                      "Sabemos que no trabalho com tais equipamentos, a precisão e o bom método de montagem, o critério de limpeza e organização fazem diferença no funcionamento do coração de suas máquinas",
+                      "Confie em nossa experiencia quando necessitar intervenções em seus equipamentos sofisticados."  
+                    ],
+                    [ "Cuidado no ajuste para alto torque ou pressão",
+                      "Assim como nos dispositivos de propulsão (motores de aviões, automóveis, trens), dispositivos hidráulicos são em essência concebidos para produzir força (normalmente a maior possível).",
+                      "Sabemos que a tolerância no ajuste entre componentes e a perfeita sintonia entre as partes internas desses dispositivos são fatores determinantes na sua performance.",
+                      "Assim, a precisão de nossa usinagem, o uso de componentes de qualidade e o cuidado de nossos técnicos fará com que voce tenha sempre equipamentos da maior potencia."  
+                    ] 
+                ]                                 
+            }
+        },
+        
+        "-LXey7j5jZOck3WWJcUG" : {
+            
+            "artifactname" : "w_subject",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_land",
+            
+            "payload": {
+                "options" : {
+                    "items" : 1, "dots" : true, "nav" : false,
+                    "autoplay" : true, "loop" : true, "autoplayTimeout" : 15000,
+                    "animateIn" : "zoomIn", "animateOut" : "zoomOut"
+                },
+
+                "header"    : "Projetos : Atendendo Necessidades",        
+                "slimages"  :[  
+                    "../assets/images/hsv/projetos1.png",
+                    "../assets/images/hsv/projetos2.png"
+                ],
+                "sltext"    :[
+                    [ "Exatamente conforme suas necessidades",
+                      "Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci, odit aut fugit, sed quia consequuntur",
+                      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                      "Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."  
+                    ],
+                    [ "Fale diretamente com quem projeta e constrói",
+                      "voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+                      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                      "Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."  
+                    ] 
+                ]                                 
+            }
+        },
+   
+   
+   
+   
+   
+    "-LYDiC1wNfAaSt2YJuhQ" : {
+            
+            "artifactname" : "w_subject",
+            "artifacttype" : "widget",
+            "landpoint"    : "",
+            "component"     : "w_land",
+            
+            "payload": {
+                "options" : {
+                    "items" : 1, "dots" : true, "nav" : false,
+                    "autoplay" : true, "loop" : true, "autoplayTimeout" : 15000,
+                    "animateIn" : "zoomIn", "animateOut" : "zoomOut"
+                },
+
+                "header"    : "Componentes e equipamentos",        
+                "slimages"  :[  
+                    "../assets/images/hsv/componente1.png",
+                    "../assets/images/hsv/componente2.png",
+                    "../assets/images/hsv/componente3.png"
+                ],
+                "sltext"    :[
+                    [ "Fabricante de nome x",
+                      "Todo equipamento deve continuar funcionando como novo após uma manutenção",
+                      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                      "Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."  
+                    ],
+                    [ "Componente especial Y",
+                      "voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+                      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                      "Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."  
+                    ],
+                    [ "Equipamento revisado para venda",
+                      "voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+                      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                      "Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."  
+                    ] 
+                ]                                 
+            }
+        }
+  
+    }
+}
+

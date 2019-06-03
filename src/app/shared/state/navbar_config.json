@@ -1,0 +1,56 @@
+{
+    "name": "navbar",
+
+    "logo":{
+        "picture" : "assets/images/hsv_loga_200x72.jpeg",
+        "alt" : "Logo"
+    },
+    
+    "search":{
+        "picture" : "assets/images/hsv_loga_200x72.jpeg",
+        "alt" : "Logo"
+    },
+    
+    "help":{
+        "picture" : "assets/images/hsv_loga_200x72.jpeg",
+        "alt" : "Logo"
+    },
+
+
+    "artifacts" : [
+         
+        {
+            "artifactname" : "megamenu",
+            "class": "mega-menu",
+            "icon" : true,
+            "iconref" : "fa fa-ellipsis-v",
+            "iconstyle" : "",
+            "payload" : { 
+                
+            }                               
+        },
+        
+        {
+            "artifactname" : "loginmenu",
+            "class" : "list-inline-item header-button-arrow",
+            "icon" : false,
+            "iconref" : "rounded-circle",
+            "iconstyle" : "width:20px;height:20px;"
+                                        
+        },
+        
+        {
+            "artifactname" : "notifications",
+            "class" : "list-inline-item header-button-arrow",
+            "icon" : true,
+            "iconref" : "fa fa-bell",
+            "iconstyle" : ""
+            
+        }
+        
+        
+   
+    ] 
+   
+}
+

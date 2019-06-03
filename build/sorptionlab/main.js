@@ -3400,23 +3400,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_homepage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/homepage */ "./src/app/pages/homepage/index.ts");
 /* harmony import */ var _shared_footer_footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./shared/footer/footer */ "./src/app/shared/footer/footer.ts");
 /* harmony import */ var _shared_navbar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./shared/navbar */ "./src/app/shared/navbar/index.ts");
-/* harmony import */ var _shared_theme_picker__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./shared/theme-picker */ "./src/app/shared/theme-picker/index.ts");
-/* harmony import */ var _shared_style_manager__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shared/style-manager */ "./src/app/shared/style-manager/index.ts");
-/* harmony import */ var _pages_page_title_page_title__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/page-title/page-title */ "./src/app/pages/page-title/page-title.ts");
-/* harmony import */ var _shared_svg_viewer_svg_viewer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/svg-viewer/svg-viewer */ "./src/app/shared/svg-viewer/svg-viewer.ts");
-/* harmony import */ var _shared_documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./shared/documentation-items/documentation-items */ "./src/app/shared/documentation-items/documentation-items.ts");
-/* harmony import */ var _shared_ga_ga__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./shared/ga/ga */ "./src/app/shared/ga/ga.ts");
-/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var _pages_usage_contract_usage_contract_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/usage-contract/usage-contract.component */ "./src/app/pages/usage-contract/usage-contract.component.ts");
-/* harmony import */ var _pages_privacy_policies_privacy_policies_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/privacy-policies/privacy-policies.component */ "./src/app/pages/privacy-policies/privacy-policies.component.ts");
-/* harmony import */ var _angular_fire__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/fire */ "./node_modules/@angular/fire/index.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _pages_sandbox__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/sandbox */ "./src/app/pages/sandbox/index.ts");
+/* harmony import */ var _shared_theme_picker__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shared/theme-picker */ "./src/app/shared/theme-picker/index.ts");
+/* harmony import */ var _shared_style_manager__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./shared/style-manager */ "./src/app/shared/style-manager/index.ts");
+/* harmony import */ var _pages_page_title_page_title__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/page-title/page-title */ "./src/app/pages/page-title/page-title.ts");
+/* harmony import */ var _shared_svg_viewer_svg_viewer__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./shared/svg-viewer/svg-viewer */ "./src/app/shared/svg-viewer/svg-viewer.ts");
+/* harmony import */ var _shared_documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./shared/documentation-items/documentation-items */ "./src/app/shared/documentation-items/documentation-items.ts");
+/* harmony import */ var _shared_ga_ga__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./shared/ga/ga */ "./src/app/shared/ga/ga.ts");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
+/* harmony import */ var _pages_usage_contract_usage_contract_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/usage-contract/usage-contract.component */ "./src/app/pages/usage-contract/usage-contract.component.ts");
+/* harmony import */ var _pages_privacy_policies_privacy_policies_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/privacy-policies/privacy-policies.component */ "./src/app/pages/privacy-policies/privacy-policies.component.ts");
+/* harmony import */ var _shared_state_appstate_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./shared/state/appstate.service */ "./src/app/shared/state/appstate.service.ts");
+/* harmony import */ var _angular_fire__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/fire */ "./node_modules/@angular/fire/index.js");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/index.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -3452,22 +3458,26 @@ var AppModule = /** @class */ (function () {
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
-                _angular_flex_layout__WEBPACK_IMPORTED_MODULE_17__["FlexLayoutModule"],
+                _angular_flex_layout__WEBPACK_IMPORTED_MODULE_18__["FlexLayoutModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(_routes__WEBPACK_IMPORTED_MODULE_6__["APP_ROUTES"]),
-                _angular_fire__WEBPACK_IMPORTED_MODULE_20__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_21__["environment"].firebase, 'sorptionlab'),
+                _angular_fire__WEBPACK_IMPORTED_MODULE_22__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_24__["environment"].firebase, 'sorptionlab'),
+                _angular_fire_auth__WEBPACK_IMPORTED_MODULE_23__["AngularFireAuthModule"],
                 _pages_homepage__WEBPACK_IMPORTED_MODULE_8__["HomepageModule"],
                 _shared_navbar__WEBPACK_IMPORTED_MODULE_10__["NavBarModule"],
                 _shared_footer_footer__WEBPACK_IMPORTED_MODULE_9__["FooterModule"],
-                _shared_svg_viewer_svg_viewer__WEBPACK_IMPORTED_MODULE_14__["SvgViewerModule"],
-                _shared_theme_picker__WEBPACK_IMPORTED_MODULE_11__["ThemePickerModule"],
-                _pages_usage_contract_usage_contract_component__WEBPACK_IMPORTED_MODULE_18__["UsageContractModule"],
-                _pages_privacy_policies_privacy_policies_component__WEBPACK_IMPORTED_MODULE_19__["PrivacyPoliciesModule"]
+                _shared_svg_viewer_svg_viewer__WEBPACK_IMPORTED_MODULE_15__["SvgViewerModule"],
+                _shared_theme_picker__WEBPACK_IMPORTED_MODULE_12__["ThemePickerModule"],
+                _pages_usage_contract_usage_contract_component__WEBPACK_IMPORTED_MODULE_19__["UsageContractModule"],
+                _pages_privacy_policies_privacy_policies_component__WEBPACK_IMPORTED_MODULE_20__["PrivacyPoliciesModule"],
+                _pages_sandbox__WEBPACK_IMPORTED_MODULE_11__["SandboxModule"],
+                _shared_state_appstate_service__WEBPACK_IMPORTED_MODULE_21__["AppStateModule"]
             ],
             providers: [
-                _pages_page_title_page_title__WEBPACK_IMPORTED_MODULE_13__["ComponentPageTitle"],
-                _shared_documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_15__["DocumentationItems"],
-                _shared_style_manager__WEBPACK_IMPORTED_MODULE_12__["StyleManager"],
-                _shared_ga_ga__WEBPACK_IMPORTED_MODULE_16__["GaService"],
+                _pages_page_title_page_title__WEBPACK_IMPORTED_MODULE_14__["ComponentPageTitle"],
+                _shared_documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_16__["DocumentationItems"],
+                _shared_style_manager__WEBPACK_IMPORTED_MODULE_13__["StyleManager"],
+                _shared_ga_ga__WEBPACK_IMPORTED_MODULE_17__["GaService"],
+                _shared_state_appstate_service__WEBPACK_IMPORTED_MODULE_21__["AppState"]
             ],
             bootstrap: [_mat_app__WEBPACK_IMPORTED_MODULE_7__["MatApp"]],
         })
@@ -3515,6 +3525,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 /* harmony import */ var _shared_ga_ga__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shared/ga/ga */ "./src/app/shared/ga/ga.ts");
+/* harmony import */ var _shared_state_appstate_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./shared/state/appstate.service */ "./src/app/shared/state/appstate.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3528,8 +3539,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var MatApp = /** @class */ (function () {
-    function MatApp(router, ga) {
+    function MatApp(router, ga, appstate) {
         var previousRoute = router.routerState.snapshot.url;
         router.events
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(function (event) { return event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationEnd"]; }))
@@ -3550,7 +3562,7 @@ var MatApp = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./mat-app.scss */ "./src/app/mat-app.scss")],
             encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _shared_ga_ga__WEBPACK_IMPORTED_MODULE_3__["GaService"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _shared_ga_ga__WEBPACK_IMPORTED_MODULE_3__["GaService"], _shared_state_appstate_service__WEBPACK_IMPORTED_MODULE_4__["AppState"]])
     ], MatApp);
     return MatApp;
 }());
@@ -3838,6 +3850,117 @@ var PrivacyPoliciesModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pages/sandbox/index.ts":
+/*!****************************************!*\
+  !*** ./src/app/pages/sandbox/index.ts ***!
+  \****************************************/
+/*! exports provided: Sandbox, SandboxModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sandbox__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sandbox */ "./src/app/pages/sandbox/sandbox.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Sandbox", function() { return _sandbox__WEBPACK_IMPORTED_MODULE_0__["Sandbox"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SandboxModule", function() { return _sandbox__WEBPACK_IMPORTED_MODULE_0__["SandboxModule"]; });
+
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/sandbox/sandbox.html":
+/*!********************************************!*\
+  !*** ./src/app/pages/sandbox/sandbox.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"docs-primary-header\">\n  <h1>SANDBOX --- Área de testes</h1>\n</div>\n\n<div class=\"test-buttons-panel\">\n  <a (click)=\"test1()\" mat-raised-button>Teste1</a>\n  <a mat-raised-button>Teste2</a>\n  <a mat-raised-button>Teste3</a>\n  <a mat-raised-button>Teste4</a>\n</div>\n\n\n\n<!--<app-footer></app-footer>-->\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/sandbox/sandbox.scss":
+/*!********************************************!*\
+  !*** ./src/app/pages/sandbox/sandbox.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3NhbmRib3gvc2FuZGJveC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/pages/sandbox/sandbox.ts":
+/*!******************************************!*\
+  !*** ./src/app/pages/sandbox/sandbox.ts ***!
+  \******************************************/
+/*! exports provided: Sandbox, SandboxModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sandbox", function() { return Sandbox; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SandboxModule", function() { return SandboxModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_svg_viewer_svg_viewer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/svg-viewer/svg-viewer */ "./src/app/shared/svg-viewer/svg-viewer.ts");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var _shared_footer_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/footer/footer */ "./src/app/shared/footer/footer.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _page_title_page_title__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../page-title/page-title */ "./src/app/pages/page-title/page-title.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var Sandbox = /** @class */ (function () {
+    function Sandbox(_componentPageTitle) {
+        this._componentPageTitle = _componentPageTitle;
+    }
+    Sandbox.prototype.ngOnInit = function () {
+        this._componentPageTitle.title = '';
+    };
+    Sandbox.prototype.test1 = function () {
+        console.log("Test1 clicked");
+    };
+    Sandbox = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'sandbox',
+            template: __webpack_require__(/*! ./sandbox.html */ "./src/app/pages/sandbox/sandbox.html"),
+            styles: [__webpack_require__(/*! ./sandbox.scss */ "./src/app/pages/sandbox/sandbox.scss")]
+        }),
+        __metadata("design:paramtypes", [_page_title_page_title__WEBPACK_IMPORTED_MODULE_5__["ComponentPageTitle"]])
+    ], Sandbox);
+    return Sandbox;
+}());
+
+var SandboxModule = /** @class */ (function () {
+    function SandboxModule() {
+    }
+    SandboxModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [_shared_svg_viewer_svg_viewer__WEBPACK_IMPORTED_MODULE_1__["SvgViewerModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButtonModule"], _shared_footer_footer__WEBPACK_IMPORTED_MODULE_3__["FooterModule"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"]],
+            exports: [Sandbox],
+            declarations: [Sandbox],
+        })
+    ], SandboxModule);
+    return SandboxModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/usage-contract/index.ts":
 /*!***********************************************!*\
   !*** ./src/app/pages/usage-contract/index.ts ***!
@@ -3951,11 +4074,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/homepage */ "./src/app/pages/homepage/index.ts");
 /* harmony import */ var _pages_usage_contract__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/usage-contract */ "./src/app/pages/usage-contract/index.ts");
 /* harmony import */ var _pages_privacy_policies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/privacy-policies */ "./src/app/pages/privacy-policies/index.ts");
+/* harmony import */ var _pages_sandbox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/sandbox */ "./src/app/pages/sandbox/index.ts");
+
 
 
 
 var APP_ROUTES = [
     { path: '', component: _pages_homepage__WEBPACK_IMPORTED_MODULE_0__["Homepage"], pathMatch: 'full', data: {} },
+    {
+        path: 'sandbox',
+        component: _pages_sandbox__WEBPACK_IMPORTED_MODULE_3__["Sandbox"]
+    },
     {
         path: 'usage',
         component: _pages_usage_contract__WEBPACK_IMPORTED_MODULE_1__["UsageContractComponent"]
@@ -3966,6 +4095,259 @@ var APP_ROUTES = [
     },
     { path: '**', redirectTo: '' },
 ];
+
+
+/***/ }),
+
+/***/ "./src/app/shared/auth/auth.module.ts":
+/*!********************************************!*\
+  !*** ./src/app/shared/auth/auth.module.ts ***!
+  \********************************************/
+/*! exports provided: AuthModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthModule", function() { return AuthModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth.service */ "./src/app/shared/auth/auth.service.ts");
+/* harmony import */ var _user_picker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user-picker */ "./src/app/shared/auth/user-picker.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+//import { CtrlloginComponent } from './ctrllogin.component';
+//import { CtrlregisterComponent }  from './ctrlregister.component';
+var AuthModule = /** @class */ (function () {
+    function AuthModule() {
+    }
+    AuthModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatTooltipModule"],
+            ],
+            declarations: [
+                _user_picker__WEBPACK_IMPORTED_MODULE_3__["UserPicker"],
+            ],
+            exports: [
+                //CtrlloginComponent,
+                //CtrlregisterComponent,
+                _user_picker__WEBPACK_IMPORTED_MODULE_3__["UserPicker"]
+            ],
+            providers: [_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]],
+        })
+    ], AuthModule);
+    return AuthModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/auth/auth.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/shared/auth/auth.service.ts ***!
+  \*********************************************/
+/*! exports provided: AuthService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function() { return AuthService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/index.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/index.cjs.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_3__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+//import { AngularFireDatabase, FirebaseListObservable } from '@angular/fire/database';
+var AuthService = /** @class */ (function () {
+    function AuthService(afAuth, router) {
+        var _this = this;
+        this.afAuth = afAuth;
+        this.router = router;
+        this.userDetails = null;
+        this.avatar_path = '../../assets/img/round-person-24px-white.svg';
+        this.user = afAuth.authState;
+        //console.log("Auth service started...");
+        this.avatar = this.avatar_path;
+        this.user.subscribe(function (user) {
+            if (user) {
+                _this.userDetails = user;
+                _this.avatar = user.photoURL;
+                console.log(_this.userDetails);
+            }
+            else {
+                _this.userDetails = null;
+                _this.avatar = _this.avatar_path;
+            }
+        });
+    }
+    AuthService.prototype.signInWithTwitter = function () {
+        return this.afAuth.auth.signInWithPopup(new firebase_app__WEBPACK_IMPORTED_MODULE_3__["auth"].TwitterAuthProvider());
+    };
+    AuthService.prototype.signInWithFacebook = function () {
+        return this.afAuth.auth.signInWithPopup(new firebase_app__WEBPACK_IMPORTED_MODULE_3__["auth"].FacebookAuthProvider());
+    };
+    AuthService.prototype.loginGoogle = function () {
+        this.afAuth.auth.signInWithPopup(new firebase_app__WEBPACK_IMPORTED_MODULE_3__["auth"].GoogleAuthProvider());
+    };
+    AuthService.prototype.loginEmail = function (email, password) {
+        this.afAuth
+            .auth
+            .signInWithEmailAndPassword(email, password)
+            .then(function (value) {
+            console.log('Nice, it worked!');
+        })
+            .catch(function (err) {
+            console.log('Algo não está bem...:', err.message);
+        });
+    };
+    AuthService.prototype.isLoggedIn = function () {
+        if (this.userDetails == null) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
+    AuthService.prototype.logout = function () {
+        var _this = this;
+        this.avatar = this.avatar_path;
+        this.afAuth.auth.signOut()
+            .then(function (res) { return _this.router.navigate(['/']); });
+    };
+    AuthService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+    ], AuthService);
+    return AuthService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/auth/index.ts":
+/*!**************************************!*\
+  !*** ./src/app/shared/auth/index.ts ***!
+  \**************************************/
+/*! exports provided: AuthModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _auth_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth.module */ "./src/app/shared/auth/auth.module.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AuthModule", function() { return _auth_module__WEBPACK_IMPORTED_MODULE_0__["AuthModule"]; });
+
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/auth/user-picker.html":
+/*!**********************************************!*\
+  !*** ./src/app/shared/auth/user-picker.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<button mat-icon-button [mat-menu-trigger-for]=\"userMenu\" matTooltip=\"Login no Servidor\" tabindex=\"-1\">\n<!--  <mat-icon>person</mat-icon>-->\n  <img src={{getAvatar()}} class = \"user-icon-round\" style=\"width:24px;height:24px;\" alt=\"\"  />\n\n</button>\n\n<!-- TODO: replace use of `mat-menu` here with a custom overlay -->\n<mat-menu class=\"docs-theme-picker-menu\" #userMenu=\"matMenu\" x-position=\"before\">\n  <div *ngIf=\"afAuth.user | async as user; else showLogin\">\n      <h3>Olá {{ user.displayName }}!</h3>\n      <button (click)=\"afAuth.logout()\">Logout</button>\n  </div>\n  <ng-template #showLogin>\n    <p>Benvindo !</p>\n    <button (click)=\"afAuth.loginGoogle()\">Login with Google</button>\n  </ng-template>\n</mat-menu>\n"
+
+/***/ }),
+
+/***/ "./src/app/shared/auth/user-picker.scss":
+/*!**********************************************!*\
+  !*** ./src/app/shared/auth/user-picker.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/* rounded social icons */\n.user-icon-round {\n  border-radius: 50%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9CYXNjb24vQVNWUC9TaXRlL1NhbmRib3gvVGVtcHMxL3NyYy9hcHAvc2hhcmVkL2F1dGgvdXNlci1waWNrZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQSwwQkFBMEI7QUFDMUI7RUFHSSxtQkFBa0IsRUFDckIiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvYXV0aC91c2VyLXBpY2tlci5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG5cbi8qIHJvdW5kZWQgc29jaWFsIGljb25zICovXG4udXNlci1pY29uLXJvdW5kIHtcbiAgICAtd2Via2l0LWJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAtbW96LWJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/shared/auth/user-picker.ts":
+/*!********************************************!*\
+  !*** ./src/app/shared/auth/user-picker.ts ***!
+  \********************************************/
+/*! exports provided: UserPicker */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserPicker", function() { return UserPicker; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth.service */ "./src/app/shared/auth/auth.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var UserPicker = /** @class */ (function () {
+    function UserPicker(_activatedRoute, afAuth) {
+        this._activatedRoute = _activatedRoute;
+        this.afAuth = afAuth;
+    }
+    UserPicker.prototype.ngOnInit = function () {
+    };
+    UserPicker.prototype.ngOnDestroy = function () {
+    };
+    UserPicker.prototype.getAvatar = function () {
+        return this.afAuth.avatar;
+    };
+    UserPicker = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'user-picker',
+            template: __webpack_require__(/*! ./user-picker.html */ "./src/app/shared/auth/user-picker.html"),
+            styles: [__webpack_require__(/*! ./user-picker.scss */ "./src/app/shared/auth/user-picker.scss")],
+            changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
+            encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+            host: { 'aria-hidden': 'true' },
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]])
+    ], UserPicker);
+    return UserPicker;
+}());
+
 
 
 /***/ }),
@@ -3990,25 +4372,24 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 };
 var _a, _b;
 
-var CDK = 'cdk';
-var COMPONENTS = 'components';
+var SANDBOX = 'sandbox';
+var SERVER = 'server';
 var SECTIONS = (_a = {},
-    _a[COMPONENTS] = {
-        name: 'Components',
-        summary: 'Angular Material comprises a range of components which implement common ' +
-            'interaction patterns according to the Material Design specification.'
+    _a[SANDBOX] = {
+        name: 'Sandbox',
+        summary: 'Área de testes para implementação dos serviços de cálculo e administração do sistema'
     },
-    _a[CDK] = {
-        name: 'CDK',
-        summary: 'The Component Dev Kit (CDK) is a set of tools that implement common interaction ' +
+    _a[SERVER] = {
+        name: 'Server',
+        summary: 'The Component Dev Kit (SERVER) is a set of tools that implement common interaction ' +
             'patterns whilst being unopinionated about their presentation. It represents an abstraction ' +
             'of the core functionalities found in the Angular Material library, without any styling ' +
-            'specific to Material Design. Think of the CDK as a blank state of well-tested functionality ' +
-            'upon which you can develop your own bespoke components.'
+            'specific to Material Design. Think of the SERVER as a blank state of well-tested functionality ' +
+            'upon which you can develop your own bespoke SANDBOX.'
     },
     _a);
 var DOCS = (_b = {},
-    _b[COMPONENTS] = [
+    _b[SANDBOX] = [
         {
             id: 'forms',
             name: 'Form Controls',
@@ -4295,7 +4676,7 @@ var DOCS = (_b = {},
         {
             id: 'modals',
             name: 'Popups & Modals',
-            summary: 'Floating components that can be dynamically shown or hidden.',
+            summary: 'Floating SANDBOX that can be dynamically shown or hidden.',
             items: [
                 {
                     id: 'bottom-sheet',
@@ -4376,7 +4757,7 @@ var DOCS = (_b = {},
             ]
         }
     ],
-    _b[CDK] = [
+    _b[SERVER] = [
         {
             id: 'component-composition',
             name: 'Common Behaviors',
@@ -4399,14 +4780,14 @@ var DOCS = (_b = {},
                     name: 'Drag and Drop',
                     summary: 'Directives enabling drag-and-drop interactions',
                     examples: [
-                        'cdk-drag-drop-axis-lock',
-                        'cdk-drag-drop-sorting',
-                        'cdk-drag-drop-overview',
-                        'cdk-drag-drop-horizontal-sorting',
-                        'cdk-drag-drop-custom-preview',
-                        'cdk-drag-drop-root-element',
-                        'cdk-drag-drop-handle',
-                        'cdk-drag-drop-connected-sorting',
+                        'SERVER-drag-drop-axis-lock',
+                        'SERVER-drag-drop-sorting',
+                        'SERVER-drag-drop-overview',
+                        'SERVER-drag-drop-horizontal-sorting',
+                        'SERVER-drag-drop-custom-preview',
+                        'SERVER-drag-drop-root-element',
+                        'SERVER-drag-drop-handle',
+                        'SERVER-drag-drop-connected-sorting',
                     ],
                 },
                 {
@@ -4432,7 +4813,7 @@ var DOCS = (_b = {},
                     name: 'Platform',
                     summary: 'Provides information about the user\'s platform.',
                     examples: [
-                        'cdk-platform-overview',
+                        'SERVER-platform-overview',
                     ]
                 },
                 {
@@ -4456,9 +4837,9 @@ var DOCS = (_b = {},
             ]
         },
         {
-            id: 'components',
-            name: 'Components',
-            summary: 'Unstyled components with useful functionality.',
+            id: 'SANDBOX',
+            name: 'SANDBOX',
+            summary: 'Unstyled SANDBOX with useful functionality.',
             items: [
                 { id: 'stepper',
                     name: 'Stepper',
@@ -4488,24 +4869,24 @@ var DOCS = (_b = {},
         },
     ],
     _b);
-for (var _i = 0, _c = DOCS[COMPONENTS]; _i < _c.length; _i++) {
+for (var _i = 0, _c = DOCS[SANDBOX]; _i < _c.length; _i++) {
     var category = _c[_i];
     for (var _d = 0, _e = category.items; _d < _e.length; _d++) {
         var doc = _e[_d];
         doc.packageName = 'material';
     }
 }
-for (var _f = 0, _g = DOCS[CDK]; _f < _g.length; _f++) {
+for (var _f = 0, _g = DOCS[SERVER]; _f < _g.length; _f++) {
     var category = _g[_f];
     for (var _h = 0, _j = category.items; _h < _j.length; _h++) {
         var doc = _j[_h];
-        doc.packageName = 'cdk';
+        doc.packageName = 'SERVER';
     }
 }
-var ALL_COMPONENTS = DOCS[COMPONENTS].reduce(function (result, category) { return result.concat(category.items); }, []);
-var ALL_CDK = DOCS[CDK].reduce(function (result, cdk) { return result.concat(cdk.items); }, []);
-var ALL_DOCS = ALL_COMPONENTS.concat(ALL_CDK);
-var ALL_CATEGORIES = DOCS[COMPONENTS].concat(DOCS[CDK]);
+var ALL_SANDBOX = DOCS[SANDBOX].reduce(function (result, category) { return result.concat(category.items); }, []);
+var ALL_SERVER = DOCS[SERVER].reduce(function (result, SERVER) { return result.concat(SERVER.items); }, []);
+var ALL_DOCS = ALL_SANDBOX.concat(ALL_SERVER);
+var ALL_CATEGORIES = DOCS[SANDBOX].concat(DOCS[SERVER]);
 var DocumentationItems = /** @class */ (function () {
     function DocumentationItems() {
     }
@@ -4513,16 +4894,16 @@ var DocumentationItems = /** @class */ (function () {
         return DOCS[section];
     };
     DocumentationItems.prototype.getItems = function (section) {
-        if (section === COMPONENTS) {
-            return ALL_COMPONENTS;
+        if (section === SANDBOX) {
+            return ALL_SANDBOX;
         }
-        if (section === CDK) {
-            return ALL_CDK;
+        if (section === SERVER) {
+            return ALL_SERVER;
         }
         return [];
     };
     DocumentationItems.prototype.getItemById = function (id, section) {
-        var sectionLookup = section == 'cdk' ? 'cdk' : 'material';
+        var sectionLookup = section == 'SERVER' ? 'SERVER' : 'material';
         return ALL_DOCS.find(function (doc) { return doc.id === id && doc.packageName == sectionLookup; });
     };
     DocumentationItems.prototype.getCategoryById = function (id) {
@@ -4720,7 +5101,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- TODO: figure out if the <nav> should go inside of a <header> element. -->\n<nav class=\"mat-navbar-header\" [class.is-next-version]=\"isNextVersion\">\n  \n  <a mat-button class=\"docs-button\" routerLink=\"/\" aria-label=\"SorptionLab\">\n    <img class=\"mat-sorption-logo\"\n         src=\"../../../assets/img/homepage/sorption1_isk.svg\"\n         alt=\"SorptionLab\">\n    <span>SorptionLab</span>\n  </a>\n  \n  <a mat-button class=\"docs-navbar-hide-small docs-button\"\n     *ngFor=\"let key of sectionKeys\"\n     [routerLink]=\"key\">{{sections[key].name}}</a>\n  \n  <a mat-button class=\"docs-navbar-hide-small docs-button\" routerLink=\"guides\">Guias</a>\n  \n  <div class=\"flex-spacer\"></div>\n\n\n<!--  <version-picker></version-picker>-->\n  <theme-picker></theme-picker>\n\n\n\n  <a mat-button class=\"docs-button docs-navbar-hide-small\" href=\"https://github.com/angular/components\"\n     aria-label=\"GitHub Repository\">\n    <img class=\"mat-sorption-logo\"\n         src=\"../../../assets/img/homepage/github-circle-white-transparent.svg\"\n         alt=\"angular\">\n    GitHub\n  </a>\n  \n  <a mat-icon-button class=\"docs-button mat-navbar-show-small\"\n     href=\"https://github.com/angular/components\" aria-label=\"GitHub Repository\">\n    <img class=\"mat-sorption-logo\"\n         src=\"../../../assets/img/homepage/github-circle-white-transparent.svg\"\n         alt=\"angular\">\n  </a>\n  \n</nav>\n\n\n\n<nav class=\"mat-navbar mat-navbar-show-small\">\n  <a mat-button class=\"mat-navbar-link\"\n    *ngFor=\"let key of sectionKeys\"\n    [routerLink]=\"key\">{{sections[key].name}}</a>\n  <a mat-button class=\"mat-navbar-link\" routerLink=\"guides\">Guides</a>\n</nav>\n\n\n<!--src=\"../../../assets/img/homepage/angular-white-transparent.svg\"-->\n"
+module.exports = "<!-- TODO: figure out if the <nav> should go inside of a <header> element. -->\n<nav class=\"mat-navbar-header\" [class.is-next-version]=\"isNextVersion\">\n  \n  <a mat-button class=\"docs-button\" routerLink=\"/\" aria-label=\"SorptionLab\">\n    <img class=\"mat-sorption-logo\"\n         src=\"../../../assets/img/homepage/sorption1_isk.svg\"\n         alt=\"SorptionLab\">\n    <span>SorptionLab</span>\n  </a>\n  \n  <a mat-button class=\"docs-navbar-hide-small docs-button\"\n     *ngFor=\"let key of sectionKeys\"\n     [routerLink]=\"key\">{{sections[key].name}}</a>\n  \n  <a mat-button class=\"docs-navbar-hide-small docs-button\" routerLink=\"guides\">Guias</a>\n  \n  <div class=\"flex-spacer\"></div>\n\n<!--  <version-picker></version-picker>-->\n  <theme-picker></theme-picker>\n\n  <user-picker></user-picker>\n\n\n\n<!--  <a mat-button class=\"docs-button docs-navbar-hide-small\" href=\"https://github.com/angular/components\"-->\n<!--     aria-label=\"GitHub Repository\">-->\n<!--    <img class=\"mat-sorption-logo\"-->\n<!--         src=\"../../../assets/img/homepage/github-circle-white-transparent.svg\"-->\n<!--         alt=\"angular\">-->\n<!--    GitHub-->\n<!--  </a>-->\n<!--  -->\n<!--  <a mat-icon-button class=\"docs-button mat-navbar-show-small\"-->\n<!--     href=\"https://github.com/angular/components\" aria-label=\"GitHub Repository\">-->\n<!--    <img class=\"mat-sorption-logo\"-->\n<!--         src=\"../../../assets/img/homepage/github-circle-white-transparent.svg\"-->\n<!--         alt=\"angular\">-->\n<!--  </a>-->\n  \n</nav>\n\n<nav class=\"mat-navbar mat-navbar-show-small\">\n  <a mat-button class=\"mat-navbar-link\"\n    *ngFor=\"let key of sectionKeys\"\n    [routerLink]=\"key\">{{sections[key].name}}</a>\n  <a mat-button class=\"mat-navbar-link\" routerLink=\"guides\">Guides</a>\n</nav>\n\n\n<!--src=\"../../../assets/img/homepage/angular-white-transparent.svg\"-->\n"
 
 /***/ }),
 
@@ -4748,11 +5129,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavBarModule", function() { return NavBarModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
-/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
 /* harmony import */ var _theme_picker_theme_picker__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../theme-picker/theme-picker */ "./src/app/shared/theme-picker/theme-picker.ts");
-/* harmony import */ var _documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../documentation-items/documentation-items */ "./src/app/shared/documentation-items/documentation-items.ts");
+/* harmony import */ var _auth__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../auth */ "./src/app/shared/auth/index.ts");
+/* harmony import */ var _documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../documentation-items/documentation-items */ "./src/app/shared/documentation-items/documentation-items.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4766,14 +5148,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-var SECTIONS_KEYS = Object.keys(_documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_6__["SECTIONS"]);
+
+var SECTIONS_KEYS = Object.keys(_documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_7__["SECTIONS"]);
 var NavBar = /** @class */ (function () {
     function NavBar() {
         this.isNextVersion = location.hostname.startsWith('next.material.angular.io');
     }
     Object.defineProperty(NavBar.prototype, "sections", {
         get: function () {
-            return _documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_6__["SECTIONS"];
+            return _documentation_items_documentation_items__WEBPACK_IMPORTED_MODULE_7__["SECTIONS"];
         },
         enumerable: true,
         configurable: true
@@ -4801,17 +5184,1112 @@ var NavBarModule = /** @class */ (function () {
     NavBarModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
             imports: [
-                _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButtonModule"],
-                _angular_material_menu__WEBPACK_IMPORTED_MODULE_3__["MatMenuModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"],
+                _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"],
+                _angular_material_menu__WEBPACK_IMPORTED_MODULE_4__["MatMenuModule"],
                 _theme_picker_theme_picker__WEBPACK_IMPORTED_MODULE_5__["ThemePickerModule"],
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
+                _auth__WEBPACK_IMPORTED_MODULE_6__["AuthModule"]
             ],
             exports: [NavBar],
             declarations: [NavBar],
         })
     ], NavBarModule);
     return NavBarModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/state/anfitria.wmap.ts":
+/*!***********************************************!*\
+  !*** ./src/app/shared/state/anfitria.wmap.ts ***!
+  \***********************************************/
+/*! exports provided: WDescriptor, AnfitriaWMap */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WDescriptor", function() { return WDescriptor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnfitriaWMap", function() { return AnfitriaWMap; });
+/* harmony import */ var typescript_collections__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! typescript-collections */ "./node_modules/typescript-collections/dist/lib/index.js");
+/* harmony import */ var typescript_collections__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(typescript_collections__WEBPACK_IMPORTED_MODULE_0__);
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+var WDescriptor = /** @class */ (function () {
+    function WDescriptor(factory_name, wmodule, routepoint) {
+        this.factory_name = factory_name;
+        this.wmodule = wmodule;
+        this.routepoint = routepoint;
+    }
+    return WDescriptor;
+}());
+
+var AnfitriaWMap = /** @class */ (function () {
+    function AnfitriaWMap() {
+        this.wdict = new typescript_collections__WEBPACK_IMPORTED_MODULE_0__["Dictionary"]();
+        this.wdict.setValue('w_authdropdown', new WDescriptor('AuthdropdownComponent', 'Anfitria', false));
+        this.wdict.setValue('w_login', new WDescriptor('CtrlloginComponent', 'Anfitria', true));
+        this.wdict.setValue('w_register', new WDescriptor('CtrlregisterComponent', 'Anfitria', true));
+        this.wdict.setValue('w_pagenotfound', new WDescriptor('PageNotFoundComponent', 'Anfitria', true));
+        this.wdict.setValue('w_widgetnotfound', new WDescriptor('WidgetNotFoundComponent', 'Anfitria', true));
+        this.wdict.setValue('w_header', new WDescriptor('CtrlheaderComponent', 'Anfitria', false));
+        this.wdict.setValue('w_footer', new WDescriptor('CtrlfooterComponent', 'Anfitria', false));
+        this.wdict.setValue('w_detail', new WDescriptor('CtrldetailComponent', 'Anfitria', true));
+        this.wdict.setValue('w_land', new WDescriptor('CtrllandComponent', 'Anfitria', true));
+        this.wdict.setValue('w_contact', new WDescriptor('CtrlcontactComponent', 'Anfitria', true));
+        this.wdict.setValue('w_subject', new WDescriptor('SubjectComponent', 'Anfitria', false));
+        this.wdict.setValue('w_infobar', new WDescriptor('InfobarComponent', 'Anfitria', false));
+        this.wdict.setValue('w_megamenu', new WDescriptor('MegamenuComponent', 'Anfitria', false));
+        this.wdict.setValue('w_seed1', new WDescriptor('Seed1Component', 'Anfitria', false));
+        this.wdict.setValue('w_jfooter', new WDescriptor('JFooterComponent', 'Anfitria', false));
+        this.wdict.setValue('w_jheader', new WDescriptor('JHeaderComponent', 'Anfitria', false));
+        this.wdict.setValue('w_jland', new WDescriptor('JLandComponent', 'Anfitria', false));
+    }
+    AnfitriaWMap.prototype.addEntry = function (wkey, factory_name, wmodule, routepoint) {
+        this.wdict.setValue(wkey, new WDescriptor(factory_name, wmodule, routepoint));
+    };
+    return AnfitriaWMap;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/state/appstate.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/shared/state/appstate.service.ts ***!
+  \**************************************************/
+/*! exports provided: USEWMAP, USEWNAME, ArtifactDescriptor, AppState, AppStateModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "USEWMAP", function() { return USEWMAP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "USEWNAME", function() { return USEWNAME; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArtifactDescriptor", function() { return ArtifactDescriptor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppState", function() { return AppState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppStateModule", function() { return AppStateModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var typescript_collections__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! typescript-collections */ "./node_modules/typescript-collections/dist/lib/index.js");
+/* harmony import */ var typescript_collections__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(typescript_collections__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var firebase_key__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! firebase-key */ "./node_modules/firebase-key/dist/esm5/index.js");
+/* harmony import */ var _md5__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./md5 */ "./src/app/shared/state/md5.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _navbar_config_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./navbar_config.json */ "./src/app/shared/state/navbar_config.json");
+var _navbar_config_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./navbar_config.json */ "./src/app/shared/state/navbar_config.json", 1);
+/* harmony import */ var _artifacts_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./artifacts.json */ "./src/app/shared/state/artifacts.json");
+var _artifacts_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./artifacts.json */ "./src/app/shared/state/artifacts.json", 1);
+/* harmony import */ var _widgetnotfound_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./widgetnotfound.component */ "./src/app/shared/state/widgetnotfound.component.ts");
+/* harmony import */ var _anfitria_wmap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./anfitria.wmap */ "./src/app/shared/state/anfitria.wmap.ts");
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+// Component Factory stuff
+
+
+// import { Http, Response, HttpModule } from '@angular/http';
+
+
+
+
+
+
+
+//import {AngularFireDatabase} from '@angular/fire/database';
+
+
+
+
+var USEWMAP = true;
+var USEWNAME = false;
+// export class Artifact{
+//
+//    constructor (   public key : string,
+//                    public artifactname : string,
+//                    public artifacttype : string,
+//                    public component : string,
+//                    public landpoint : string,
+//                    public payload : any
+//
+//                    ){ }
+// }
+var ArtifactDescriptor = /** @class */ (function () {
+    function ArtifactDescriptor(parent, componentRef) {
+        this.parent = parent;
+        this.componentRef = componentRef;
+    }
+    return ArtifactDescriptor;
+}());
+
+var AppState = /** @class */ (function () {
+    function AppState(route, router, compiler, resolver, http) {
+        var _this = this;
+        this.route = route;
+        this.router = router;
+        this.compiler = compiler;
+        this.resolver = resolver;
+        this.http = http;
+        // Events support
+        this.ticks = 0;
+        this.current_position = 0;
+        this.current_page = -1;
+        this.app_events = new typescript_collections__WEBPACK_IMPORTED_MODULE_4__["LinkedList"]();
+        this.site_model = 'Default';
+        this.site_id = '-LXey7jGNNzGU3Sskk9a';
+        this.editable = false;
+        this.site_header_sbj = new rxjs__WEBPACK_IMPORTED_MODULE_7__["ReplaySubject"]();
+        this.site_footer_sbj = new rxjs__WEBPACK_IMPORTED_MODULE_7__["ReplaySubject"]();
+        // Estruturas temporarias de teste do serviço de dados
+        //    land_artifacts : any;
+        //    navbar_artifacts : any;
+        //    app_artifacts : any;
+        this.afwmap = new _anfitria_wmap__WEBPACK_IMPORTED_MODULE_11__["AnfitriaWMap"]();
+        this.artifact_descriptors = new typescript_collections__WEBPACK_IMPORTED_MODULE_4__["Dictionary"]();
+        this.dict = new typescript_collections__WEBPACK_IMPORTED_MODULE_4__["Dictionary"]();
+        // Events services
+        this.timer = Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["timer"])(2000, 5000);
+        this.sub = this.timer.subscribe(function (t) { return _this.tickerFunc(t); });
+        // this.site_header = "w_header";
+        this.site_header$ = this.site_header_sbj.asObservable();
+        // Load (if there is some) URL site config parameters
+        this.site_model = this.getUrlParam('modelo', 'Default');
+        this.editable = this.getUrlParam('editor', '4556').match('1992') ? true : false;
+        this.loadfromURL();
+        //this.loadfromFirebase();
+        console.log(' App Service started...');
+    }
+    // private loadfromFirebase() {
+    //
+    //     this.items = this.db.list('/').snapshotChanges().pipe(
+    //         map(changes => changes.map(c => ({ key: c.payload.key, ...c.payload.val() })))
+    //     );
+    //     this.items.subscribe(x => this.configFromFirebase(x));
+    // }
+    AppState.prototype.loadfromURL = function () {
+        var _this = this;
+        var cf = this.http.get('/jserver/artifacts1.json');
+        //const cf = this.http.get('../assets/artifacts1.json');
+        cf.subscribe(function (resp) {
+            _this.configFromFirebase(_this.normalizetoArray(__assign({}, resp)));
+        });
+    };
+    AppState.prototype.normalizetoArray = function (obj) {
+        var ids = [];
+        for (var prop in obj) {
+            if (typeof obj[prop] == 'object' && obj[prop]) {
+                var b = obj[prop];
+                ids.push({ key: prop,
+                    'artifacname': b.artifactname,
+                    'artifacttype': b.artifacttype,
+                    component: b.component,
+                    landpoint: b.landpoint,
+                    payload: b.payload,
+                    lookuptable: b.lookuptable
+                });
+            }
+        }
+        return ids;
+    };
+    AppState.prototype.configFromFirebase = function (siteslk) {
+        // this.site_header_sbj.next("w_jheader");
+        var slk = siteslk.filter(function (item) { return item.key === '-LWG_000000000000001'; })[0].lookuptable[this.site_model];
+        var site_descriptor = siteslk.filter(function (item) { return item.key === slk; });
+        if (site_descriptor != undefined) {
+            // Good, there is a good config
+            var header = siteslk.filter(function (item) { return item.key === site_descriptor[0].payload.header; });
+            var footer = siteslk.filter(function (item) { return item.key === site_descriptor[0].payload.footer; });
+            var land = siteslk.filter(function (item) { return item.key === site_descriptor[0].payload.land; });
+            var sheader = JSON.stringify(header);
+            var md5header = _md5__WEBPACK_IMPORTED_MODULE_6__["Md5"].hashStr(sheader);
+            // Locate the header component
+            if (header != undefined) {
+                // Fine, we found a header artifact to this config
+                this.site_header_sbj.next(header[0].component);
+                this.header_config = header[0].payload || {};
+            }
+            else {
+                // Ooops ! - No artifact found assign to default
+                console.error('Header config not found, using default');
+                this.site_header = 'w_header';
+                this.header_config = _navbar_config_json__WEBPACK_IMPORTED_MODULE_8__;
+            }
+            // Locate the footer
+            if (footer != undefined) {
+                this.site_footer = footer[0].component;
+                this.footer_config = footer[0].payload;
+            }
+            else {
+                console.error('Footer config not found, using default');
+                this.site_footer = 'w_ctrlfooter';
+                this.footer_config = {};
+            }
+            // And the Land component...
+            if (land != undefined) {
+                this.site_land = land[0].component;
+                this.land_config = land[0].payload;
+                this.addRoute(land[0].landpoint, land[0].component, true);
+            }
+            else {
+                console.error('Land config not found, using default');
+                this.site_land = 'w_ctrlland';
+                this.land_config = {};
+                this.addRoute('ctrlland', 'w_ctrlland', true);
+            }
+        }
+        // this.site_header_sbj.next("w_header");
+    };
+    AppState.prototype.configFromLocal = function (model) {
+        //
+        //        // Load the sites index table (is the first record @ sites variable
+        //        let site_lookup = app_script.sites[ "-LWG_000000000000001"];
+        //        // Now we know what to load...
+        //        this.site_id = site_lookup.lookuptable[model];
+        //
+        //        // Load initial status
+        //        let site_descriptor = app_script.sites[this.site_id];
+        //
+        //        if (site_descriptor != undefined){
+        //            // Good, there is a good config
+        //            let header = app_script.artifacts[site_descriptor.payload.header];
+        //            let footer = app_script.artifacts[site_descriptor.payload.footer];
+        //            let land = app_script.pages[site_descriptor.payload.land];
+        //
+        //            // Locate the header component
+        //            if (header != undefined){
+        //                // Fine, we found a header artifact to this config
+        //                this.site_header = header.component;
+        //                this.header_config = header.payload;
+        //            }
+        //            else{
+        //                // Ooops ! - No artifact found assign to default
+        //                console.error('Header config not found, using default');
+        //                this.site_header = "w_header";
+        //                this.header_config = navbar_config;
+        //            }
+        //            // Locate the footer
+        //            if (footer != undefined){
+        //                this.site_footer = footer.component;
+        //                this.footer_config = footer.payload;
+        //            }
+        //            else{
+        //                console.error('Footer config not found, using default');
+        //                this.site_footer = "w_ctrlfooter";
+        //                this.footer_config = {};
+        //            }
+        //            // And the Land component...
+        //            if (land != undefined){
+        //                this.site_land = land.component;
+        //                this.land_config = land.payload;
+        //                this.addRoute (land.landpoint , land.component, true);
+        //            }
+        //            else{
+        //                console.error('Land config not found, using default');
+        //                this.site_land = "w_ctrlland";
+        //                this.land_config = {};
+        //                this.addRoute ("ctrlland" , "w_ctrlland", true);
+        //            }
+        //
+        //        }
+    };
+    AppState.prototype.getUID = function () { return Object(firebase_key__WEBPACK_IMPORTED_MODULE_5__["key"])(); };
+    AppState.prototype.generateKeys = function () { for (var num = 0; num <= 20; num++) {
+        console.log(Object(firebase_key__WEBPACK_IMPORTED_MODULE_5__["key"])());
+    } };
+    // Dynamic Component Services
+    AppState.prototype.createComponent = function (parent, compname, container, config) {
+        var compo = this.findComponent(compname, USEWMAP);
+        var factory = this.resolver.resolveComponentFactory(compo);
+        var comporef = container.createComponent(factory);
+        // this.artifact_descriptors.setValue( key(), new ArtifactDescriptor (parent, comporef))
+        this.registerArtifact(parent, comporef);
+        if (config != null) {
+            comporef.instance.data = config;
+        }
+    };
+    AppState.prototype.installArtifacts = function (artifacts, containers, component, uid) {
+        var container;
+        artifacts.forEach(function (value) {
+            var artifact = this.getArtifact(Object.keys(value));
+            // Find the container to drop to
+            var container_ptr = Object.values(value)[0];
+            if (container_ptr == undefined || container_ptr == null) {
+                // Nothig defined - use default (which is the first key)
+                container = containers.getValue(containers.keys()[0]);
+            }
+            else {
+                // There is place to go, address it
+                container = containers.getValue(container_ptr);
+            }
+            if (artifact.artifacttype == 'widget') {
+                this.createComponent(uid, artifact.artifactname, container, artifact.payload);
+            }
+            else {
+                if (artifact.payload.templateCode != undefined) {
+                    this.compileTemplate(uid, artifact.payload.templateCode, container);
+                }
+                else if (artifact.payload.templateUrl != undefined) {
+                    var tmpl1 = this.getTemplatefromAssets('assets/templates/template1.html');
+                    this.compileTemplate(uid, tmpl1, container);
+                }
+            }
+        }.bind(this));
+        // console.log( "artifact  loaded...")
+    };
+    // Template services  ============================================================================
+    AppState.prototype.getTemplatefromAssets = function (template) {
+        var tmpl = '<p>Template</p>';
+        this.http.get('assets/templates/template1.html')
+            .subscribe(function (data) {
+            // tmpl = data.text()
+            // console.log (tmpl)
+        });
+        return tmpl;
+    };
+    AppState.prototype.compileTemplate = function (parent, template, container) {
+        var metadata = {
+            selector: "runtime-component-sample",
+            template: template
+        };
+        var factory = this.createComponentFactorySync(this.compiler, metadata, null);
+        var comporef = container.createComponent(factory);
+        comporef.instance.appState = this;
+        // this.artifact_descriptors.setValue( key(), new ArtifactDescriptor (parent, comporef));
+        this.registerArtifact(parent, comporef);
+    };
+    AppState.prototype.createComponentFactorySync = function (compiler, metadata, componentClass) {
+        var cmpClass;
+        // =============
+        var Icomponent = /** @class */ (function () {
+            function Icomponent() {
+                this.data = 'Teststring-out';
+                this.uid = Object(firebase_key__WEBPACK_IMPORTED_MODULE_5__["key"])();
+            }
+            Icomponent.prototype.ngOnInit = function () {
+                this.appState.createComponent(this.uid, 'w_seed1', this.container1, 'set by template on container 1');
+                this.appState.createComponent(this.uid, 'w_seed1', this.container2, 'set by template on container 2');
+            };
+            __decorate([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('widgetContainer1', { read: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"] }),
+                __metadata("design:type", Object)
+            ], Icomponent.prototype, "container1", void 0);
+            __decorate([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('widgetContainer2', { read: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"] }),
+                __metadata("design:type", Object)
+            ], Icomponent.prototype, "container2", void 0);
+            return Icomponent;
+        }());
+        if (componentClass == undefined || componentClass == null) {
+            cmpClass = Icomponent;
+        }
+        else {
+            cmpClass = componentClass;
+        }
+        var decoratedCmp = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])(metadata)(cmpClass);
+        var RuntimeComponentModule = /** @class */ (function () {
+            function RuntimeComponentModule() {
+            }
+            RuntimeComponentModule = __decorate([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({ imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]], declarations: [decoratedCmp] })
+            ], RuntimeComponentModule);
+            return RuntimeComponentModule;
+        }());
+        var module = compiler.compileModuleAndAllComponentsSync(RuntimeComponentModule);
+        return module.componentFactories.find(function (f) { return f.componentType === decoratedCmp; });
+    };
+    // Artifacts Management =====================================================================================
+    AppState.prototype.listArtifacts = function () {
+        Object.keys(_artifacts_json__WEBPACK_IMPORTED_MODULE_9__.artifacts).forEach(function (key) {
+            var atype = _artifacts_json__WEBPACK_IMPORTED_MODULE_9__.artifacts[key].artifactname;
+            console.log(key + '=' + atype);
+        });
+    };
+    AppState.prototype.getArtifact = function (id) {
+        var artifact = _artifacts_json__WEBPACK_IMPORTED_MODULE_9__.artifacts[id];
+        if (artifact != undefined) {
+            return artifact;
+        }
+        else {
+            console.error('Artifact config not found, using default');
+            return _artifacts_json__WEBPACK_IMPORTED_MODULE_9__.artifacts['-LWG_000000000000000'];
+        }
+    };
+    AppState.prototype.findComponent = function (compname, usemap) {
+        if (usemap) {
+            var wdesc = this.afwmap.wdict.getValue(compname);
+            compname = wdesc.factory_name;
+        }
+        var factories = Array.from(this.resolver['_factories'].keys());
+        var factoryClass = factories.find(function (x) { return x.name === compname; });
+        if (factoryClass == undefined) {
+            console.log('Widget not found : ' + compname);
+            return _widgetnotfound_component__WEBPACK_IMPORTED_MODULE_10__["WidgetNotFoundComponent"];
+        }
+        return factoryClass;
+    };
+    AppState.prototype.registerArtifact = function (parent, comporef) {
+        this.artifact_descriptors.setValue(comporef.instance.uid, new ArtifactDescriptor(parent, comporef));
+        console.log('Artifact ' + comporef.instance.uid + ' @ ' + parent + ' / type=' + comporef.componentType.name + ' was registered');
+    };
+    AppState.prototype.getArtifactChildren = function (uid) {
+        console.log('Searching childrens for : ' + uid);
+        this.artifact_descriptors.values().forEach(function (descriptor) {
+            var parent = descriptor.parent;
+            if (parent == uid) {
+                console.log('Parent' + parent + ' has child = ' + descriptor.componentRef.instance.uid);
+            }
+        });
+    };
+    // URL Parameter lookup services ===========================================================================
+    AppState.prototype.getUrlVars = function () {
+        var vars = {};
+        var whref = window.location.href;
+        var re = /[?&]+([^=&]+)=([^&]*)/gi;
+        var parts = whref.replace(re, function (m, key, value) {
+            vars[key] = value;
+            return value;
+        });
+        return vars;
+    };
+    AppState.prototype.getUrlParam = function (parameter, defaultvalue) {
+        var urlparameter = defaultvalue;
+        if (window.location.href.indexOf(parameter) > -1) {
+            urlparameter = this.getUrlVars()[parameter];
+        }
+        return urlparameter;
+    };
+    // Route services ==========================================================
+    AppState.prototype.addRoute = function (route, compname, usemap) {
+        var compo = this.findComponent(compname, usemap);
+        this.router.config.unshift({ path: route, component: compo });
+    };
+    AppState.prototype.flagServiceCalled = function () {
+        console.log('Service called ...');
+    };
+    AppState.prototype.tickerFunc = function (tick) {
+        // console.log(this);
+        this.ticks = tick;
+        // console.log("Status @ " + new Date().getTime() + " scroll= " + this.current_position + " @ " + this.current_page);
+        if (this.app_events.size() > 0) {
+            this.app_events.forEach(function (value) {
+                console.log('State Event = ' + value);
+            });
+            this.app_events.clear();
+        }
+    };
+    AppState.prototype.updatePosition = function (page, position) {
+        // console.log("Scroll Event=", position );
+        if (this.current_page !== page) {
+            this.app_events.add(new Date().getTime() + ':' + 'pageload:' + page);
+            this.current_page = page;
+        }
+        if ((position > this.current_position + 200) || position < this.current_position - 200) {
+            this.app_events.add(new Date().getTime() + ':' + 'pagescroll:' + position);
+            this.current_position = position;
+        }
+    };
+    AppState = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], AppState);
+    return AppState;
+}());
+
+var AppStateModule = /** @class */ (function () {
+    function AppStateModule() {
+    }
+    AppStateModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+            ],
+            declarations: [
+                _widgetnotfound_component__WEBPACK_IMPORTED_MODULE_10__["WidgetNotFoundComponent"],
+            ],
+            exports: [
+                _widgetnotfound_component__WEBPACK_IMPORTED_MODULE_10__["WidgetNotFoundComponent"]
+            ],
+            providers: [AppState],
+        })
+    ], AppStateModule);
+    return AppStateModule;
+}());
+
+/**
+-LWG_ppZDHg8mln4OgZh
+-LWG_rWTHPbWm--PKUtr
+-LXey7j5jZOck3WWJcUG
+-LXey7jECquW1SV6YVEQ
+-LXey7jFThUwGEPUoxBF
+-LXey7jGNNzGU3Sskk9a
+-LXey7jHb400Cx3NwKmZ
+-LXey7jIiStuUaC2aUAk
+-LXey7jJluUJQlAtjyTa
+-LXey7jKZLDdMnM-VTQv
+-LXey7jLhz9f9OOIXzrl
+-LXey7jMWccau0MlFbI-
+-LXey7jNvVt_PcE5EtyH
+-LXey7jOt1xxkSfFoQPk
+-LYDiC1ofGFNoatQdonP
+-LYDiC1wNfAaSt2YJuhQ
+-LYDiC1xDR5rwI_n0yW2
+-LYDiC1yJ4GxDueEPqfU
+-LYDiC1ztflqE41xUejY
+-LYDiC2-IRk5vjYFVzjG
+-LYDiC20H2u7CleNbXQC
+-LYDiC210Ph8Le_qXY3e
+-LYDiC22Mokw9z6G-vGQ
+-LYDiC23P3C5jJ1vfUjL
+-LYDiC24IDLTZarDgTim
+-LYDiC25p4DfmL2Z6-jl
+-LYDiC26r_Ap3D3mTu1H
+-LYDiC273I4sGnBNdT_n
+-LYDiC2873pRuQ8CsJ6x
+-LYDiC297gDPAhksKf5l
+-LYDiC2A8XF8pb0maIcA
+-LYDiC2BvW52ImqBNOhp
+-LYDiC2CQmXLh_lAuuNO
+-LYDiC2Dm85BJ4hXkjoY
+//-LYDiC2ESxdEBTlO0-Pt
+
+ */
+//        var temp = db.list('/artifacts', ref => ref);
+// var adaRef = firebase.database().ref("artifacts");
+//        var temp = db.database().ref('/artifacts/').once('value').then(function(snapshot) {
+//            var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+//        });
+//
+// import { v4 as uuid } from 'uuid';
+// import { key } from "firebase-key";
+//
+//
+//
+//      // Recover from firebase
+//        this.itemsRef = db.list('artifacts' , ref => ref.orderByChild('uid').equalTo('4567890'));
+//
+//        this.items = this.itemsRef.snapshotChanges().pipe(
+//            map(changes => changes.map(c => ({ key: c.payload.key, ...c.payload.val() })))
+//        );
+//
+//        this.items.subscribe(x => console.log(x));
+//
+//
+////        console.log('Items : ' + this.items);
+//
+////        listref.valueChanges().subscribe(actions => {
+////            actions.forEach(action => {
+////
+////                //console.log(<Artifact>action.header);
+////                this.dict.setValue(action.header, <Artifact>action);
+////
+////                console.log('artifact was loaded : ' + action.uid);
+////
+////            });
+////        });
+//
+//
+// Recover from firebase
+// this.itemsRef = db.list('artifacts' , ref => ref.orderByChild('uid').equalTo('4567890'));
+//        let site_script2 = app_script.pipe(
+//            map(changes => changes.map(c => ({ key: c.payload.key, ...c.payload.val() })))
+//        );
+//        this.items = this.itemsRef.valueChanges();
+// this.configFromLocal(this.site_model);
+
+
+/***/ }),
+
+/***/ "./src/app/shared/state/artifacts.json":
+/*!*********************************************!*\
+  !*** ./src/app/shared/state/artifacts.json ***!
+  \*********************************************/
+/*! exports provided: sites, pages, artifacts, default */
+/***/ (function(module) {
+
+module.exports = {"sites":{"-LWG_000000000000001":{"artifactname":"Tabela de referencia cruzada de templates de sites","artifacttype":"sitelookup","lookuptable":{"Default":"-LXey7jGNNzGU3Sskk9a","Jeff":"-LXey7jGNNzGU3Sskk9a","Anfitria":"-LYDiC2ESxdEBTlO0-Pt","Teste1":"-LYDiC2ESxdEBTlO0-Pt"}},"-LXey7jGNNzGU3Sskk9a":{"artifactname":"Hidrauservice - Site simples Jeff","artifacttype":"site","payload":{"header":"-LYDiC2Dm85BJ4hXkjoY","land":"-LXey7jFThUwGEPUoxBF","footer":"-LXey7jHb400Cx3NwKmZ"}},"-LYDiC2ESxdEBTlO0-Pt":{"artifactname":"Site Anfitria - Base","artifacttype":"site","payload":{"header":"-LXey7jECquW1SV6YVEQ","land":"-LYDiC210Ph8Le_qXY3e","footer":"-LYDiC1yJ4GxDueEPqfU"}}},"pages":{"-LWG_000000000000000":{"artifactname":"Erro 404 - página não encontrada","artifacttype":"widget","landpoint":"","component":"w_widgetnotfound","payload":{}},"-LXey7jFThUwGEPUoxBF":{"artifactname":"Landing page - Jeff","artifacttype":"page","landpoint":"ctrlland","component":"w_jland","payload":{"artifacts":[]}},"-LYDiC210Ph8Le_qXY3e":{"artifactname":"Landing Page Anfitria","artifacttype":"page","landpoint":"ctrlland","component":"w_land","payload":{"artifacts":[{"-LWG_ppZDHg8mln4OgZh":"container1"},{"-LWG_rWTHPbWm--PKUtr":"container1"},{"-LXey7j5jZOck3WWJcUG":"container1"},{"-LYDiC1wNfAaSt2YJuhQ":"container1"}]}}},"artifacts":{"-LXey7jHb400Cx3NwKmZ":{"artifactname":"footer - Jeff - frame inicial","artifacttype":"widget","landpoint":"","component":"w_jfooter","payload":{}},"-LYDiC1yJ4GxDueEPqfU":{"artifactname":"footer - Anfitria base","artifacttype":"widget","landpoint":"","component":"w_footer","payload":{}},"-LYDiC2Dm85BJ4hXkjoY":{"artifactname":"Header navbar - Jeff frame inicial","artifacttype":"widget","landpoint":"","component":"w_jheader","payload":{}},"-LXey7jECquW1SV6YVEQ":{"artifactname":"Header navbar - Anfitria","artifacttype":"widget","landpoint":"","component":"w_header","payload":{"logo":{"picture":"assets/images/hsv/Logo_vermelho.png","alt":"Logo"},"search":{"picture":"assets/images/hsv_loga_200x72.jpeg","alt":"Logo"},"help":{"picture":"assets/images/hsv_loga_200x72.jpeg","alt":"Logo"},"artifacts":[{"artifactname":"megamenu","class":"mega-menu","icon":true,"iconref":"fa fa-ellipsis-v","iconstyle":"","payload":{}},{"artifactname":"loginmenu","class":"list-inline-item header-button-arrow","icon":false,"iconref":"rounded-circle","iconstyle":"width:20px;height:20px;","payload":{}},{"artifactname":"notifications","class":"list-inline-item header-button-arrow","icon":true,"iconref":"fa fa-bell","iconstyle":"","payload":{}}]}},"-LXey7jJluUJQlAtjyTa":{"artifactname":"template1","artifacttype":"template","landpoint":"","payload":{"code":"<section class=\"page-header\"> <div class=\"container\"> <h1><b>COMUNIQUE-SE DE FORMA EFICIENTE</b></h1> <ol class=\"breadcrumb\"><li><a href=\"#\">Controle</a></li> <li class=\"active\">{{teststring}}</li></ol></div></section>"}},"-LXey7jKZLDdMnM-VTQv":{"artifactname":"template3","artifacttype":"template","landpoint":"","payload":{"templateUrl":"assets/templates/template1.html","templateCode":"<section class=\"info-bar info-bar-clean\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-sm-6\">\r\n                <i class=\"glyphicon glyphicon-user\"></i>\r\n                <h3>EXATAMENTE SUAS NECESSIDADES</h3>\r\n                <p class=\"fs-11\">Aqui é você que decide o que o sistema faz. Configure você mesmo ou diga como quer que funcione.</p>\r\n            </div>\r\n            <div class=\"col-sm-6\">\r\n                <i class=\"glyphicon glyphicon-usd\"></i>\r\n                <h3>TEMPO + CONHECIMENTO = VALOR</h3>\r\n                <p class=\"fs-11\">Use seus recursos pessoais de forma otimizada. Deixe que o Controle cuide dos detalhes com precisão.</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>"}},"-LXey7jLhz9f9OOIXzrl":{"artifactname":"template2","artifacttype":"template","landpoint":"","payload":{"templateCode":"<section class=\"info-bar info-bar-clean\"> <div class=\"container\"> <div class=\"row\"> <div class=\"col-sm-4\"> <template #widgetContainer1></template> </div> <div class=\"col-sm-4\"> <template #widgetContainer2></template> </div></div> </div> </section>"}},"-LWG_ppZDHg8mln4OgZh":{"artifactname":"w_infobar","artifacttype":"widget","landpoint":"","component":"w_land","payload":{"header":"Info Bar header"}},"-LWG_rWTHPbWm--PKUtr":{"artifactname":"w_subject","artifacttype":"widget","landpoint":"","component":"w_land","payload":{"options":{"items":1,"dots":true,"nav":false,"autoplay":true,"loop":true,"autoplayTimeout":15000,"animateIn":"zoomIn","animateOut":"zoomOut","autoplayHoverPause":true},"header":"Serviços : Cuidando de seus Equipamentos","slimages":["../assets/images/hsv/service3.jpeg","../assets/images/hsv/service4.jpeg","../assets/images/hsv/service1.png","../assets/images/hsv/service2.png"],"sltext":[["Atendendo as Normas e garantindo a qualidade","Todo equipamento deve continuar operando como novo após uma manutenção e são as normas e especificações de funcionamento que que orientam nosso trabalho.","Nossas bancadas de teste e medição constituem fator importante na avaliação da qualidade do trabalho de recuperação de componentes e sistemas.","Então, quando seu equipamento estiver em manutenção, fique tranquilo, estaremos de olho nas especificações do fabricante de forma a retorna-lo o melhor possível."],["Testes em condições reais de trabalho","Equipamentos industriais são por vezes solicitados a desempenharem trabalho no limite (ou mais) de sua capacidade, e é justamente nessas horas que uma falha NÂO deve ocorrer.","Contamos com nossas bancadas de simulação e estresse mecânico para nos informar se um determinado equipamento poderá cumprir o esforço requerido quando no máximo de suas possibilidades.","Portanto, quando precisar ir até o limite com seu equipamento, ele já esteve lá anteriormente e não deixará voce na mão"],["Precisão no trabalho com comandos e acionamentos","A tecnologia de acionamentos hidraulicos hoje em dia incorpora cada vez mais dispositivos sofisticados de ajuste, realimentação e loops de controle de pressões e posicionamentos.","Sabemos que no trabalho com tais equipamentos, a precisão e o bom método de montagem, o critério de limpeza e organização fazem diferença no funcionamento do coração de suas máquinas","Confie em nossa experiencia quando necessitar intervenções em seus equipamentos sofisticados."],["Cuidado no ajuste para alto torque ou pressão","Assim como nos dispositivos de propulsão (motores de aviões, automóveis, trens), dispositivos hidráulicos são em essência concebidos para produzir força (normalmente a maior possível).","Sabemos que a tolerância no ajuste entre componentes e a perfeita sintonia entre as partes internas desses dispositivos são fatores determinantes na sua performance.","Assim, a precisão de nossa usinagem, o uso de componentes de qualidade e o cuidado de nossos técnicos fará com que voce tenha sempre equipamentos da maior potencia."]]}},"-LXey7j5jZOck3WWJcUG":{"artifactname":"w_subject","artifacttype":"widget","landpoint":"","component":"w_land","payload":{"options":{"items":1,"dots":true,"nav":false,"autoplay":true,"loop":true,"autoplayTimeout":15000,"animateIn":"zoomIn","animateOut":"zoomOut"},"header":"Projetos : Atendendo Necessidades","slimages":["../assets/images/hsv/projetos1.png","../assets/images/hsv/projetos2.png"],"sltext":[["Exatamente conforme suas necessidades","Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci, odit aut fugit, sed quia consequuntur","Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.","Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."],["Fale diretamente com quem projeta e constrói","voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos","Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.","Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."]]}},"-LYDiC1wNfAaSt2YJuhQ":{"artifactname":"w_subject","artifacttype":"widget","landpoint":"","component":"w_land","payload":{"options":{"items":1,"dots":true,"nav":false,"autoplay":true,"loop":true,"autoplayTimeout":15000,"animateIn":"zoomIn","animateOut":"zoomOut"},"header":"Componentes e equipamentos","slimages":["../assets/images/hsv/componente1.png","../assets/images/hsv/componente2.png","../assets/images/hsv/componente3.png"],"sltext":[["Fabricante de nome x","Todo equipamento deve continuar funcionando como novo após uma manutenção","Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.","Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."],["Componente especial Y","voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos","Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.","Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."],["Equipamento revisado para venda","voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos","Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.","Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."]]}}}};
+
+/***/ }),
+
+/***/ "./src/app/shared/state/md5.ts":
+/*!*************************************!*\
+  !*** ./src/app/shared/state/md5.ts ***!
+  \*************************************/
+/*! exports provided: Md5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Md5", function() { return Md5; });
+/*
+
+TypeScript Md5
+==============
+
+Based on work by
+* Joseph Myers: http://www.myersdaily.org/joseph/javascript/md5-text.html
+* André Cruz: https://github.com/satazor/SparkMD5
+* Raymond Hill: https://github.com/gorhill/yamd5.js
+
+Effectively a TypeScrypt re-write of Raymond Hill JS Library
+
+The MIT License (MIT)
+
+Copyright (C) 2014 Raymond Hill
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2015 André Cruz <amdfcruz@gmail.com>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+
+
+*/
+var Md5 = /** @class */ (function () {
+    function Md5() {
+        this._state = new Int32Array(4);
+        this._buffer = new ArrayBuffer(68);
+        this._buffer8 = new Uint8Array(this._buffer, 0, 68);
+        this._buffer32 = new Uint32Array(this._buffer, 0, 17);
+        this.start();
+    }
+    // One time hashing functions
+    Md5.hashStr = function (str, raw) {
+        if (raw === void 0) { raw = false; }
+        return this.onePassHasher
+            .start()
+            .appendStr(str)
+            .end(raw);
+    };
+    Md5.hashAsciiStr = function (str, raw) {
+        if (raw === void 0) { raw = false; }
+        return this.onePassHasher
+            .start()
+            .appendAsciiStr(str)
+            .end(raw);
+    };
+    Md5._hex = function (x) {
+        var hc = Md5.hexChars;
+        var ho = Md5.hexOut;
+        var n;
+        var offset;
+        var j;
+        var i;
+        for (i = 0; i < 4; i += 1) {
+            offset = i * 8;
+            n = x[i];
+            for (j = 0; j < 8; j += 2) {
+                ho[offset + 1 + j] = hc.charAt(n & 0x0F);
+                n >>>= 4;
+                ho[offset + 0 + j] = hc.charAt(n & 0x0F);
+                n >>>= 4;
+            }
+        }
+        return ho.join('');
+    };
+    Md5._md5cycle = function (x, k) {
+        var a = x[0];
+        var b = x[1];
+        var c = x[2];
+        var d = x[3];
+        // ff()
+        a += (b & c | ~b & d) + k[0] - 680876936 | 0;
+        a = (a << 7 | a >>> 25) + b | 0;
+        d += (a & b | ~a & c) + k[1] - 389564586 | 0;
+        d = (d << 12 | d >>> 20) + a | 0;
+        c += (d & a | ~d & b) + k[2] + 606105819 | 0;
+        c = (c << 17 | c >>> 15) + d | 0;
+        b += (c & d | ~c & a) + k[3] - 1044525330 | 0;
+        b = (b << 22 | b >>> 10) + c | 0;
+        a += (b & c | ~b & d) + k[4] - 176418897 | 0;
+        a = (a << 7 | a >>> 25) + b | 0;
+        d += (a & b | ~a & c) + k[5] + 1200080426 | 0;
+        d = (d << 12 | d >>> 20) + a | 0;
+        c += (d & a | ~d & b) + k[6] - 1473231341 | 0;
+        c = (c << 17 | c >>> 15) + d | 0;
+        b += (c & d | ~c & a) + k[7] - 45705983 | 0;
+        b = (b << 22 | b >>> 10) + c | 0;
+        a += (b & c | ~b & d) + k[8] + 1770035416 | 0;
+        a = (a << 7 | a >>> 25) + b | 0;
+        d += (a & b | ~a & c) + k[9] - 1958414417 | 0;
+        d = (d << 12 | d >>> 20) + a | 0;
+        c += (d & a | ~d & b) + k[10] - 42063 | 0;
+        c = (c << 17 | c >>> 15) + d | 0;
+        b += (c & d | ~c & a) + k[11] - 1990404162 | 0;
+        b = (b << 22 | b >>> 10) + c | 0;
+        a += (b & c | ~b & d) + k[12] + 1804603682 | 0;
+        a = (a << 7 | a >>> 25) + b | 0;
+        d += (a & b | ~a & c) + k[13] - 40341101 | 0;
+        d = (d << 12 | d >>> 20) + a | 0;
+        c += (d & a | ~d & b) + k[14] - 1502002290 | 0;
+        c = (c << 17 | c >>> 15) + d | 0;
+        b += (c & d | ~c & a) + k[15] + 1236535329 | 0;
+        b = (b << 22 | b >>> 10) + c | 0;
+        // gg()
+        a += (b & d | c & ~d) + k[1] - 165796510 | 0;
+        a = (a << 5 | a >>> 27) + b | 0;
+        d += (a & c | b & ~c) + k[6] - 1069501632 | 0;
+        d = (d << 9 | d >>> 23) + a | 0;
+        c += (d & b | a & ~b) + k[11] + 643717713 | 0;
+        c = (c << 14 | c >>> 18) + d | 0;
+        b += (c & a | d & ~a) + k[0] - 373897302 | 0;
+        b = (b << 20 | b >>> 12) + c | 0;
+        a += (b & d | c & ~d) + k[5] - 701558691 | 0;
+        a = (a << 5 | a >>> 27) + b | 0;
+        d += (a & c | b & ~c) + k[10] + 38016083 | 0;
+        d = (d << 9 | d >>> 23) + a | 0;
+        c += (d & b | a & ~b) + k[15] - 660478335 | 0;
+        c = (c << 14 | c >>> 18) + d | 0;
+        b += (c & a | d & ~a) + k[4] - 405537848 | 0;
+        b = (b << 20 | b >>> 12) + c | 0;
+        a += (b & d | c & ~d) + k[9] + 568446438 | 0;
+        a = (a << 5 | a >>> 27) + b | 0;
+        d += (a & c | b & ~c) + k[14] - 1019803690 | 0;
+        d = (d << 9 | d >>> 23) + a | 0;
+        c += (d & b | a & ~b) + k[3] - 187363961 | 0;
+        c = (c << 14 | c >>> 18) + d | 0;
+        b += (c & a | d & ~a) + k[8] + 1163531501 | 0;
+        b = (b << 20 | b >>> 12) + c | 0;
+        a += (b & d | c & ~d) + k[13] - 1444681467 | 0;
+        a = (a << 5 | a >>> 27) + b | 0;
+        d += (a & c | b & ~c) + k[2] - 51403784 | 0;
+        d = (d << 9 | d >>> 23) + a | 0;
+        c += (d & b | a & ~b) + k[7] + 1735328473 | 0;
+        c = (c << 14 | c >>> 18) + d | 0;
+        b += (c & a | d & ~a) + k[12] - 1926607734 | 0;
+        b = (b << 20 | b >>> 12) + c | 0;
+        // hh()
+        a += (b ^ c ^ d) + k[5] - 378558 | 0;
+        a = (a << 4 | a >>> 28) + b | 0;
+        d += (a ^ b ^ c) + k[8] - 2022574463 | 0;
+        d = (d << 11 | d >>> 21) + a | 0;
+        c += (d ^ a ^ b) + k[11] + 1839030562 | 0;
+        c = (c << 16 | c >>> 16) + d | 0;
+        b += (c ^ d ^ a) + k[14] - 35309556 | 0;
+        b = (b << 23 | b >>> 9) + c | 0;
+        a += (b ^ c ^ d) + k[1] - 1530992060 | 0;
+        a = (a << 4 | a >>> 28) + b | 0;
+        d += (a ^ b ^ c) + k[4] + 1272893353 | 0;
+        d = (d << 11 | d >>> 21) + a | 0;
+        c += (d ^ a ^ b) + k[7] - 155497632 | 0;
+        c = (c << 16 | c >>> 16) + d | 0;
+        b += (c ^ d ^ a) + k[10] - 1094730640 | 0;
+        b = (b << 23 | b >>> 9) + c | 0;
+        a += (b ^ c ^ d) + k[13] + 681279174 | 0;
+        a = (a << 4 | a >>> 28) + b | 0;
+        d += (a ^ b ^ c) + k[0] - 358537222 | 0;
+        d = (d << 11 | d >>> 21) + a | 0;
+        c += (d ^ a ^ b) + k[3] - 722521979 | 0;
+        c = (c << 16 | c >>> 16) + d | 0;
+        b += (c ^ d ^ a) + k[6] + 76029189 | 0;
+        b = (b << 23 | b >>> 9) + c | 0;
+        a += (b ^ c ^ d) + k[9] - 640364487 | 0;
+        a = (a << 4 | a >>> 28) + b | 0;
+        d += (a ^ b ^ c) + k[12] - 421815835 | 0;
+        d = (d << 11 | d >>> 21) + a | 0;
+        c += (d ^ a ^ b) + k[15] + 530742520 | 0;
+        c = (c << 16 | c >>> 16) + d | 0;
+        b += (c ^ d ^ a) + k[2] - 995338651 | 0;
+        b = (b << 23 | b >>> 9) + c | 0;
+        // ii()
+        a += (c ^ (b | ~d)) + k[0] - 198630844 | 0;
+        a = (a << 6 | a >>> 26) + b | 0;
+        d += (b ^ (a | ~c)) + k[7] + 1126891415 | 0;
+        d = (d << 10 | d >>> 22) + a | 0;
+        c += (a ^ (d | ~b)) + k[14] - 1416354905 | 0;
+        c = (c << 15 | c >>> 17) + d | 0;
+        b += (d ^ (c | ~a)) + k[5] - 57434055 | 0;
+        b = (b << 21 | b >>> 11) + c | 0;
+        a += (c ^ (b | ~d)) + k[12] + 1700485571 | 0;
+        a = (a << 6 | a >>> 26) + b | 0;
+        d += (b ^ (a | ~c)) + k[3] - 1894986606 | 0;
+        d = (d << 10 | d >>> 22) + a | 0;
+        c += (a ^ (d | ~b)) + k[10] - 1051523 | 0;
+        c = (c << 15 | c >>> 17) + d | 0;
+        b += (d ^ (c | ~a)) + k[1] - 2054922799 | 0;
+        b = (b << 21 | b >>> 11) + c | 0;
+        a += (c ^ (b | ~d)) + k[8] + 1873313359 | 0;
+        a = (a << 6 | a >>> 26) + b | 0;
+        d += (b ^ (a | ~c)) + k[15] - 30611744 | 0;
+        d = (d << 10 | d >>> 22) + a | 0;
+        c += (a ^ (d | ~b)) + k[6] - 1560198380 | 0;
+        c = (c << 15 | c >>> 17) + d | 0;
+        b += (d ^ (c | ~a)) + k[13] + 1309151649 | 0;
+        b = (b << 21 | b >>> 11) + c | 0;
+        a += (c ^ (b | ~d)) + k[4] - 145523070 | 0;
+        a = (a << 6 | a >>> 26) + b | 0;
+        d += (b ^ (a | ~c)) + k[11] - 1120210379 | 0;
+        d = (d << 10 | d >>> 22) + a | 0;
+        c += (a ^ (d | ~b)) + k[2] + 718787259 | 0;
+        c = (c << 15 | c >>> 17) + d | 0;
+        b += (d ^ (c | ~a)) + k[9] - 343485551 | 0;
+        b = (b << 21 | b >>> 11) + c | 0;
+        x[0] = a + x[0] | 0;
+        x[1] = b + x[1] | 0;
+        x[2] = c + x[2] | 0;
+        x[3] = d + x[3] | 0;
+    };
+    Md5.prototype.start = function () {
+        this._dataLength = 0;
+        this._bufferLength = 0;
+        this._state.set(Md5.stateIdentity);
+        return this;
+    };
+    // Char to code point to to array conversion:
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+    // #Example.3A_Fixing_charCodeAt_to_handle_non-Basic-Multilingual-Plane_characters_if_their_presence_earlier_in_the_string_is_unknown
+    Md5.prototype.appendStr = function (str) {
+        var buf8 = this._buffer8;
+        var buf32 = this._buffer32;
+        var bufLen = this._bufferLength;
+        var code;
+        var i;
+        for (i = 0; i < str.length; i += 1) {
+            code = str.charCodeAt(i);
+            if (code < 128) {
+                buf8[bufLen++] = code;
+            }
+            else if (code < 0x800) {
+                buf8[bufLen++] = (code >>> 6) + 0xC0;
+                buf8[bufLen++] = code & 0x3F | 0x80;
+            }
+            else if (code < 0xD800 || code > 0xDBFF) {
+                buf8[bufLen++] = (code >>> 12) + 0xE0;
+                buf8[bufLen++] = (code >>> 6 & 0x3F) | 0x80;
+                buf8[bufLen++] = (code & 0x3F) | 0x80;
+            }
+            else {
+                code = ((code - 0xD800) * 0x400) + (str.charCodeAt(++i) - 0xDC00) + 0x10000;
+                if (code > 0x10FFFF) {
+                    throw new Error('Unicode standard supports code points up to U+10FFFF');
+                }
+                buf8[bufLen++] = (code >>> 18) + 0xF0;
+                buf8[bufLen++] = (code >>> 12 & 0x3F) | 0x80;
+                buf8[bufLen++] = (code >>> 6 & 0x3F) | 0x80;
+                buf8[bufLen++] = (code & 0x3F) | 0x80;
+            }
+            if (bufLen >= 64) {
+                this._dataLength += 64;
+                Md5._md5cycle(this._state, buf32);
+                bufLen -= 64;
+                buf32[0] = buf32[16];
+            }
+        }
+        this._bufferLength = bufLen;
+        return this;
+    };
+    Md5.prototype.appendAsciiStr = function (str) {
+        var buf8 = this._buffer8;
+        var buf32 = this._buffer32;
+        var bufLen = this._bufferLength;
+        var i;
+        var j = 0;
+        for (;;) {
+            i = Math.min(str.length - j, 64 - bufLen);
+            while (i--) {
+                buf8[bufLen++] = str.charCodeAt(j++);
+            }
+            if (bufLen < 64) {
+                break;
+            }
+            this._dataLength += 64;
+            Md5._md5cycle(this._state, buf32);
+            bufLen = 0;
+        }
+        this._bufferLength = bufLen;
+        return this;
+    };
+    Md5.prototype.appendByteArray = function (input) {
+        var buf8 = this._buffer8;
+        var buf32 = this._buffer32;
+        var bufLen = this._bufferLength;
+        var i;
+        var j = 0;
+        for (;;) {
+            i = Math.min(input.length - j, 64 - bufLen);
+            while (i--) {
+                buf8[bufLen++] = input[j++];
+            }
+            if (bufLen < 64) {
+                break;
+            }
+            this._dataLength += 64;
+            Md5._md5cycle(this._state, buf32);
+            bufLen = 0;
+        }
+        this._bufferLength = bufLen;
+        return this;
+    };
+    Md5.prototype.getState = function () {
+        var self = this;
+        var s = self._state;
+        return {
+            buffer: String.fromCharCode.apply(null, self._buffer8),
+            buflen: self._bufferLength,
+            length: self._dataLength,
+            state: [s[0], s[1], s[2], s[3]]
+        };
+    };
+    Md5.prototype.setState = function (state) {
+        var buf = state.buffer;
+        var x = state.state;
+        var s = this._state;
+        var i;
+        this._dataLength = state.length;
+        this._bufferLength = state.buflen;
+        s[0] = x[0];
+        s[1] = x[1];
+        s[2] = x[2];
+        s[3] = x[3];
+        for (i = 0; i < buf.length; i += 1) {
+            this._buffer8[i] = buf.charCodeAt(i);
+        }
+    };
+    Md5.prototype.end = function (raw) {
+        if (raw === void 0) { raw = false; }
+        var bufLen = this._bufferLength;
+        var buf8 = this._buffer8;
+        var buf32 = this._buffer32;
+        var i = (bufLen >> 2) + 1;
+        var dataBitsLen;
+        this._dataLength += bufLen;
+        buf8[bufLen] = 0x80;
+        buf8[bufLen + 1] = buf8[bufLen + 2] = buf8[bufLen + 3] = 0;
+        buf32.set(Md5.buffer32Identity.subarray(i), i);
+        if (bufLen > 55) {
+            Md5._md5cycle(this._state, buf32);
+            buf32.set(Md5.buffer32Identity);
+        }
+        // Do the final computation based on the tail and length
+        // Beware that the final length may not fit in 32 bits so we take care of that
+        dataBitsLen = this._dataLength * 8;
+        if (dataBitsLen <= 0xFFFFFFFF) {
+            buf32[14] = dataBitsLen;
+        }
+        else {
+            var matches = dataBitsLen.toString(16).match(/(.*?)(.{0,8})$/);
+            if (matches === null) {
+                return;
+            }
+            var lo = parseInt(matches[2], 16);
+            var hi = parseInt(matches[1], 16) || 0;
+            buf32[14] = lo;
+            buf32[15] = hi;
+        }
+        Md5._md5cycle(this._state, buf32);
+        return raw ? this._state : Md5._hex(this._state);
+    };
+    // Private Static Variables
+    Md5.stateIdentity = new Int32Array([1732584193, -271733879, -1732584194, 271733878]);
+    Md5.buffer32Identity = new Int32Array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    Md5.hexChars = '0123456789abcdef';
+    Md5.hexOut = [];
+    // Permanent instance is to use for one-call hashing
+    Md5.onePassHasher = new Md5();
+    return Md5;
+}());
+
+if (Md5.hashStr('hello') !== '5d41402abc4b2a76b9719d911017c592') {
+    console.error('Md5 self test failed.');
+}
+
+
+/***/ }),
+
+/***/ "./src/app/shared/state/navbar_config.json":
+/*!*************************************************!*\
+  !*** ./src/app/shared/state/navbar_config.json ***!
+  \*************************************************/
+/*! exports provided: name, logo, search, help, artifacts, default */
+/***/ (function(module) {
+
+module.exports = {"name":"navbar","logo":{"picture":"assets/images/hsv_loga_200x72.jpeg","alt":"Logo"},"search":{"picture":"assets/images/hsv_loga_200x72.jpeg","alt":"Logo"},"help":{"picture":"assets/images/hsv_loga_200x72.jpeg","alt":"Logo"},"artifacts":[{"artifactname":"megamenu","class":"mega-menu","icon":true,"iconref":"fa fa-ellipsis-v","iconstyle":"","payload":{}},{"artifactname":"loginmenu","class":"list-inline-item header-button-arrow","icon":false,"iconref":"rounded-circle","iconstyle":"width:20px;height:20px;"},{"artifactname":"notifications","class":"list-inline-item header-button-arrow","icon":true,"iconref":"fa fa-bell","iconstyle":""}]};
+
+/***/ }),
+
+/***/ "./src/app/shared/state/widgetnotfound.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/shared/state/widgetnotfound.component.ts ***!
+  \**********************************************************/
+/*! exports provided: WidgetNotFoundComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetNotFoundComponent", function() { return WidgetNotFoundComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var WidgetNotFoundComponent = /** @class */ (function () {
+    function WidgetNotFoundComponent() {
+    }
+    WidgetNotFoundComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            template: '<a>Widget Not Found</a>'
+        })
+    ], WidgetNotFoundComponent);
+    return WidgetNotFoundComponent;
 }());
 
 

@@ -23,18 +23,19 @@ import {StyleManager} from './shared/style-manager';
 import {ComponentPageTitle} from './pages/page-title/page-title';
 
 import {SvgViewerModule} from './shared/svg-viewer/svg-viewer';
-
 import {DocumentationItems} from './shared/documentation-items/documentation-items';
 import {GaService} from './shared/ga/ga';
-
 import { FlexLayoutModule } from '@angular/flex-layout';
+
 import {UsageContractModule} from "./pages/usage-contract/usage-contract.component";
 import {PrivacyPoliciesModule} from "./pages/privacy-policies/privacy-policies.component";
+import {AppState, AppStateModule} from "./shared/state/appstate.service";
 
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
+
 
 
 @NgModule({
@@ -65,7 +66,7 @@ import { environment } from '../environments/environment';
     UsageContractModule,
     PrivacyPoliciesModule,
     SandboxModule,
-
+    AppStateModule
 
 
   ],
@@ -75,6 +76,8 @@ import { environment } from '../environments/environment';
     DocumentationItems,
     StyleManager,
     GaService,
+    AppState
+
   ],
 
   bootstrap: [MatApp],

@@ -5,6 +5,9 @@ import {FooterModule} from '../../shared/footer/footer';
 import {RouterModule} from '@angular/router';
 import {ComponentPageTitle} from '../page-title/page-title';
 
+
+
+
 @Component({
   selector: 'sandbox',
   templateUrl: './sandbox.html',
@@ -16,6 +19,11 @@ export class Sandbox implements OnInit {
 
   ngOnInit(): void {
     this._componentPageTitle.title = '';
+  }
+
+
+  test1(){
+    console.log("Test1 clicked");
   }
 }
 

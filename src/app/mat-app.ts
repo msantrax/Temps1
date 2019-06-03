@@ -3,6 +3,7 @@ import {Router, NavigationEnd} from '@angular/router';
 import {filter} from 'rxjs/operators';
 
 import {GaService} from './shared/ga/ga';
+import {AppState} from "./shared/state/appstate.service";
 
 
 @Component({
@@ -14,7 +15,9 @@ import {GaService} from './shared/ga/ga';
 
 export class MatApp {
 
-  constructor(router: Router, ga: GaService) {
+  constructor(router: Router, ga: GaService,  appstate : AppState) {
+
+
     let previousRoute = router.routerState.snapshot.url;
 
     router.events
