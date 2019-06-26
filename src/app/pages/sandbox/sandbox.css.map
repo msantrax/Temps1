@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,aAAc;EACZ,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,QAAQ;;AAGnB,iBAAkB;EAChB,SAAS,EAAE,KAAK;;AAIlB,gBAAiB;EACf,MAAM,EAAE,KAAK;EACb,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,eAAe",
+"sources": ["sandbox.scss"],
+"names": [],
+"file": "sandbox.css"
+}

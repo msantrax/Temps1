@@ -26,6 +26,7 @@ import {SvgViewerModule} from './shared/svg-viewer/svg-viewer';
 import {DocumentationItems} from './shared/documentation-items/documentation-items';
 import {GaService} from './shared/ga/ga';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 import {UsageContractModule} from "./pages/usage-contract/usage-contract.component";
 import {PrivacyPoliciesModule} from "./pages/privacy-policies/privacy-policies.component";
@@ -34,6 +35,9 @@ import {AppState, AppStateModule} from "./shared/state/appstate.service";
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireFunctionsModule} from '@angular/fire/functions';
+
+
 import { environment } from '../environments/environment';
 
 
@@ -52,11 +56,13 @@ import { environment } from '../environments/environment';
     FormsModule,
     HttpClientModule,
     FlexLayoutModule,
+    NgxSpinnerModule,
 
     RouterModule.forRoot(APP_ROUTES),
 
     AngularFireModule.initializeApp(environment.firebase, 'sorptionlab'),
     AngularFireAuthModule,
+    AngularFireFunctionsModule,
 
     HomepageModule,
     NavBarModule,
@@ -76,7 +82,8 @@ import { environment } from '../environments/environment';
     DocumentationItems,
     StyleManager,
     GaService,
-    AppState
+    AppState,
+    // {provide: FUNCTIONS_ORIGIN, useValue: 'http://localhost:5001'}
 
   ],
 

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.config.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -25,12 +25,16 @@
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
     "ajv": "^6.10.0",
+    "angularfire2": "^5.2.1",
     "bokehjs": "^1.1.0",
     "core-js": "^2.5.4",
     "firebase": "^6.1.0",
+    "firebase-key": "^2.0.2",
     "flatbush": "^3.1.1",
     "hammerjs": "^2.0.8",
+    "ngx-spinner": "^7.1.4",
     "rxjs": "~6.3.3",
+    "typescript-collections": "^1.3.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

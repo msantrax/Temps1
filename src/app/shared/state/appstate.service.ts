@@ -12,21 +12,22 @@ import {
   ViewChild,
   ViewContainerRef
 } from '@angular/core';
+
 import {CommonModule} from '@angular/common';
-// import { Http, Response, HttpModule } from '@angular/http';
 import {HttpClient} from '@angular/common/http';
 import {ActivatedRoute, Router} from '@angular/router';
-
 
 import * as Collections from 'typescript-collections';
 import {key} from 'firebase-key';
 import {Md5} from './md5';
 
 import {Observable, of, timer} from 'rxjs';
-import {map} from 'rxjs/operators';
+import {first, map} from 'rxjs/operators';
 import {Subscription} from 'rxjs';
 import {ReplaySubject} from 'rxjs';
 
+
+import { AngularFireFunctions } from '@angular/fire/functions';
 
 //import {AngularFireDatabase} from '@angular/fire/database';
 
@@ -131,18 +132,24 @@ export class AppState {
 
     dict = new Collections.Dictionary<string, Artifact>();
 
+    test_counter = 0;
 
     constructor(
                     private route: ActivatedRoute,
                     private router: Router,
                     public compiler: Compiler,
                     private resolver: ComponentFactoryResolver,
-                    private http: HttpClient
-                    ) {
+                    private http: HttpClient,
+                    private fns: AngularFireFunctions
+
+    ) {
 
         // Events services
         this.timer = timer(2000, 5000);
         this.sub = this.timer.subscribe(t => this.tickerFunc(t));
+
+
+        this.fns.functions.useFunctionsEmulator( "http://localhost:5000");
 
         // this.site_header = "w_header";
         this.site_header$ = this.site_header_sbj.asObservable();
@@ -169,14 +176,41 @@ export class AppState {
 
     private loadfromURL() {
 
-        const cf = this.http.get('/jserver/artifacts1.json');
+        //const cf = this.http.get('/jserver/artifacts1.json');
         //const cf = this.http.get('../assets/artifacts1.json');
 
-        cf.subscribe(resp => {
-            this.configFromFirebase(this.normalizetoArray({ ... resp}));
-        });
+        // cf.subscribe(resp => {
+        //     this.configFromFirebase(this.normalizetoArray({ ... resp}));
+        // });
 
     }
+
+
+
+    public test1 () : string{
+
+      let resp1 = "teste ";
+
+      //const callable = this.fns.httpsCallable('date');
+
+
+      this.fns.httpsCallable('helloWorld')({ text: 'Some Request Data' })
+        .pipe(first())
+        .subscribe(
+          resp => {
+            resp1 = resp;
+            console.log({ resp });
+          },
+          err => {
+            console.error({ err});
+          }
+        );
+
+      return resp1 + this.test_counter++ ;
+
+
+    }
+
 
 
 

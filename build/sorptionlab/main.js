@@ -3876,7 +3876,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"docs-primary-header\">\n  <h1>SANDBOX --- Área de testes</h1>\n</div>\n\n<div class=\"test-buttons-panel\">\n  <a (click)=\"test1()\" mat-raised-button>Teste1</a>\n  <a mat-raised-button>Teste2</a>\n  <a mat-raised-button>Teste3</a>\n  <a mat-raised-button>Teste4</a>\n</div>\n\n\n\n<!--<app-footer></app-footer>-->\n"
+module.exports = "<div class=\"docs-primary-header\">\n  <h1>SANDBOX --- Área de testes</h1>\n</div>\n\n\n\n<div fxLayout=\"row\" fxLayoutGap=\"0.5%\" >\n  <a (click)=\"test1()\" mat-raised-button>Teste1</a>\n  <a mat-raised-button>Teste2</a>\n  <a mat-raised-button>Teste3</a>\n  <a mat-raised-button>Teste4</a>\n</div>\n\n\n\n<!--<app-footer></app-footer>-->\n"
 
 /***/ }),
 
@@ -3908,6 +3908,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_footer_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/footer/footer */ "./src/app/shared/footer/footer.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _page_title_page_title__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../page-title/page-title */ "./src/app/pages/page-title/page-title.ts");
+/* harmony import */ var _shared_state_appstate_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/state/appstate.service */ "./src/app/shared/state/appstate.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3923,15 +3924,17 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var Sandbox = /** @class */ (function () {
-    function Sandbox(_componentPageTitle) {
+    function Sandbox(_componentPageTitle, appstate) {
         this._componentPageTitle = _componentPageTitle;
+        this.appstate = appstate;
     }
     Sandbox.prototype.ngOnInit = function () {
         this._componentPageTitle.title = '';
     };
     Sandbox.prototype.test1 = function () {
-        console.log("Test1 clicked");
+        console.log(this.appstate.test1());
     };
     Sandbox = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -3939,7 +3942,8 @@ var Sandbox = /** @class */ (function () {
             template: __webpack_require__(/*! ./sandbox.html */ "./src/app/pages/sandbox/sandbox.html"),
             styles: [__webpack_require__(/*! ./sandbox.scss */ "./src/app/pages/sandbox/sandbox.scss")]
         }),
-        __metadata("design:paramtypes", [_page_title_page_title__WEBPACK_IMPORTED_MODULE_5__["ComponentPageTitle"]])
+        __metadata("design:paramtypes", [_page_title_page_title__WEBPACK_IMPORTED_MODULE_5__["ComponentPageTitle"],
+            _shared_state_appstate_service__WEBPACK_IMPORTED_MODULE_6__["AppState"]])
     ], Sandbox);
     return Sandbox;
 }());
@@ -4071,27 +4075,25 @@ var UsageContractModule = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APP_ROUTES", function() { return APP_ROUTES; });
-/* harmony import */ var _pages_homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/homepage */ "./src/app/pages/homepage/index.ts");
-/* harmony import */ var _pages_usage_contract__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/usage-contract */ "./src/app/pages/usage-contract/index.ts");
-/* harmony import */ var _pages_privacy_policies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/privacy-policies */ "./src/app/pages/privacy-policies/index.ts");
-/* harmony import */ var _pages_sandbox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/sandbox */ "./src/app/pages/sandbox/index.ts");
-
+/* harmony import */ var _pages_usage_contract__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/usage-contract */ "./src/app/pages/usage-contract/index.ts");
+/* harmony import */ var _pages_privacy_policies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/privacy-policies */ "./src/app/pages/privacy-policies/index.ts");
+/* harmony import */ var _pages_sandbox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/sandbox */ "./src/app/pages/sandbox/index.ts");
 
 
 
 var APP_ROUTES = [
-    { path: '', component: _pages_homepage__WEBPACK_IMPORTED_MODULE_0__["Homepage"], pathMatch: 'full', data: {} },
+    { path: '', component: _pages_sandbox__WEBPACK_IMPORTED_MODULE_2__["Sandbox"], pathMatch: 'full', data: {} },
     {
         path: 'sandbox',
-        component: _pages_sandbox__WEBPACK_IMPORTED_MODULE_3__["Sandbox"]
+        component: _pages_sandbox__WEBPACK_IMPORTED_MODULE_2__["Sandbox"]
     },
     {
         path: 'usage',
-        component: _pages_usage_contract__WEBPACK_IMPORTED_MODULE_1__["UsageContractComponent"]
+        component: _pages_usage_contract__WEBPACK_IMPORTED_MODULE_0__["UsageContractComponent"]
     },
     {
         path: 'privacy',
-        component: _pages_privacy_policies__WEBPACK_IMPORTED_MODULE_2__["PrivacyPoliciesComponent"]
+        component: _pages_privacy_policies__WEBPACK_IMPORTED_MODULE_1__["PrivacyPoliciesComponent"]
     },
     { path: '**', redirectTo: '' },
 ];
@@ -5290,17 +5292,6 @@ var _navbar_config_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__
 var _artifacts_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./artifacts.json */ "./src/app/shared/state/artifacts.json", 1);
 /* harmony import */ var _widgetnotfound_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./widgetnotfound.component */ "./src/app/shared/state/widgetnotfound.component.ts");
 /* harmony import */ var _anfitria_wmap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./anfitria.wmap */ "./src/app/shared/state/anfitria.wmap.ts");
-var __assign = (undefined && undefined.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5392,12 +5383,14 @@ var AppState = /** @class */ (function () {
     //     this.items.subscribe(x => this.configFromFirebase(x));
     // }
     AppState.prototype.loadfromURL = function () {
-        var _this = this;
-        var cf = this.http.get('/jserver/artifacts1.json');
+        //const cf = this.http.get('/jserver/artifacts1.json');
         //const cf = this.http.get('../assets/artifacts1.json');
-        cf.subscribe(function (resp) {
-            _this.configFromFirebase(_this.normalizetoArray(__assign({}, resp)));
-        });
+        // cf.subscribe(resp => {
+        //     this.configFromFirebase(this.normalizetoArray({ ... resp}));
+        // });
+    };
+    AppState.prototype.test1 = function () {
+        return "Resultados do teste 1 !";
     };
     AppState.prototype.normalizetoArray = function (obj) {
         var ids = [];

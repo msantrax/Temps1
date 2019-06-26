@@ -15,26 +15,16 @@
  */
 'use strict';
 
-// [START functionsimport]
 const functions = require('firebase-functions');
-// [END functionsimport]
-// [START additionalimports]
-// Moments library to format dates.
-const moment = require('moment');
-// CORS Express middleware to enable CORS Requests.
-const cors = require('cors')({
-  origin: true,
-});
 
-// According to firebase setup
+// CORS ENTRY - IF NEEDED
+// const cors = require('cors')({
+//   origin: true,
+// });
+
+// FIREBASE SETUP
 var admin = require("firebase-admin");
 var serviceAccount = require("../fbadmkey.json");
-// [END additionalimports]
-
-
-const requestjs = require('request');
-
-
 
 //Firebase adm setup
 admin.initializeApp({
@@ -43,79 +33,110 @@ admin.initializeApp({
 });
 
 
+const requestjs = require('request-promise');
 
-// [START all]
-/**
- * Returns the server's date. You must provide a `format` URL query parameter or `format` vaue in
- * the request body with which we'll try to format the date.
- *
- * Format must follow the Node moment library. See: http://momentjs.com/
- *
- * Example format: "MMMM Do YYYY, h:mm:ss a".
- * Example request using URL query parameters:
- *   https://us-central1-<project-id>.cloudfunctions.net/date?format=MMMM%20Do%20YYYY%2C%20h%3Amm%3Ass%20a
- * Example request using request body with cURL:
- *   curl -H 'Content-Type: application/json' /
- *        -d '{"format": "MMMM Do YYYY, h:mm:ss a"}' /
- *        https://us-central1-<project-id>.cloudfunctions.net/date
- *
- * This endpoint supports CORS.
- */
-// [START trigger]
-exports.date = functions.https.onRequest((req, res) => {
-  // [END trigger]
-  // [START sendError]
-  // Forbidding PUT requests.
-  if (req.method === 'PUT') {
-    return res.status(403).send('Forbidden!');
-  }
-  // [END sendError]
-
-  // [START usingMiddleware]
-  // Enable CORS using the `cors` express middleware.
-  return cors(req, res, () => {
-    // [END usingMiddleware]
-    // Reading date format from URL query parameter.
-    // [START readQueryParam]
-    let format = req.query.format;
-    // [END readQueryParam]
-    // Reading date format from request body query parameter
-    if (!format) {
-      // [START readBodyParam]
-      format = req.body.format;
-      // [END readBodyParam]
-    }
-    // [START sendResponse]
-    const formattedDate = moment().format(format);
-    console.log('Sending Formatted date:', formattedDate);
-    res.status(200).send(formattedDate);
-    // [END sendResponse]
-  });
-});
+const http = require('http');
+const agent = new http.Agent({keepAlive: true});
 
 
+// ===========================================================================
+// SERVER COMMS TESTBENCH
+
+// ECHO VIA HTTP CALL
 exports.serverRequest = functions.https.onCall((request, response) => {
 
-  console.log(request.id);
-  const formattedDate = moment();
-  return 'Server returned : ' + formattedDate;
+  console.log(request);
+  return request;
 
 });
+
+
+
+//var gtwy_status = {
+  var touch_counter = 0;
+//  function_id : 'date'
+//}
+
+var options = {
+    //uri: 'http://104.197.197.79:8080/artifacts1.json',
+    uri: 'http://localhost:8080/artifacts1.json',
+    headers: {
+        'User-Agent': 'Functions-Gateway'
+    },
+    //json: true,
+    encoding : 'utf-8',
+    agent : agent,
+    time : true
+};
 
 
 exports.serverProxy = functions.https.onCall((request, response) => {
 
-  var lbody = "lbody empty";
+  return requestjs(options)
+    .then (function (body) {
+      //console.log ("then called..." + JSON.stringify(body, null, 2));
+      return body;
+    })
+    .catch(function (err) {
+      console.log ("Error" + err);
+      throw new functions.https.HttpsError('failed-precondition', 'Falha no acesso ao Server');
+    });
 
-  return requestjs('http://localhost:8080/artifacts1.json').then (() => {
-      console.log ("then called...");
-      return lbody;
-    }
-  );
-
-  return 'Return Imediatelly...';
+  return 'Return Imediate ???';
 
 });
+
+
+exports.serverProxyHttp = functions.https.onCall((request, response) => {
+
+  var req = http.request({
+        host: 'localhost',
+        port: 8080,
+        path: '/artifacts1.json',
+        method: 'GET',
+        agent: agent,
+    }, res => {
+        console.log ('res called');
+        let rawData = '';
+        res.setEncoding('utf8');
+        res.on('data', chunk => {
+          console.log ('chunk called');
+          rawData += chunk;
+        });
+        res.on('end', () => {
+          console.log ('end called : ' + rawData.length);
+          return (`Data: ${rawData}`);
+        });
+    });
+    req.on('error', e => {
+      console.log ("Error : ${e.message}");
+      throw new functions.https.HttpsError('failed-precondition', e.message);
+    });
+    req.end();
+
+
+    console.log('Return Imediate ???');
+
+});
+
+
+exports.getConfig = functions.https.onCall((req, response) => {
+
+  console.log ('init timer');
+  setTimeout(  () => {    console.log('response after 4 seconds');  },  4 * 1000);
+  console.log ('end timer');
+
+  touch_counter = touch_counter + 1;
+  console.log ("getConfig requested touch_counter = %d", touch_counter);
+  return touch_counter;
+
+
+
+
+});
+
+
+
 
 
 

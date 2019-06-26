@@ -10,7 +10,7 @@ export const APP_ROUTES
 
 : Routes = [
 
-  {path: '', component: Homepage, pathMatch: 'full', data: {}},
+  {path: '', component: Sandbox, pathMatch: 'full', data: {}},
 
   {
     path: 'sandbox',
