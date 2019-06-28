@@ -16,6 +16,7 @@ import {HomepageModule} from './pages/homepage';
 import {FooterModule} from './shared/footer/footer';
 import {NavBarModule} from './shared/navbar';
 import {SandboxModule} from "./pages/sandbox";
+import {ServerGateModule} from "./shared/servergate/servergate.module";
 
 
 import {ThemePickerModule} from './shared/theme-picker';
@@ -39,6 +40,7 @@ import { AngularFireFunctionsModule} from '@angular/fire/functions';
 
 
 import { environment } from '../environments/environment';
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
 
 
 
@@ -64,6 +66,8 @@ import { environment } from '../environments/environment';
     AngularFireAuthModule,
     AngularFireFunctionsModule,
 
+    ServerGateModule,
+
     HomepageModule,
     NavBarModule,
     FooterModule,
@@ -72,7 +76,16 @@ import { environment } from '../environments/environment';
     UsageContractModule,
     PrivacyPoliciesModule,
     SandboxModule,
-    AppStateModule
+    AppStateModule,
+    NgxAuthFirebaseUIModule.forRoot({
+      apiKey: "AIzaSyA530G42J_fq8-DKKGPFxDlOU3ooXd6690",
+      authDomain: "sorptionlab.firebaseapp.com",
+      databaseURL: "https://sorptionlab.firebaseio.com",
+      projectId: "sorptionlab",
+      storageBucket: "sorptionlab.appspot.com",
+      messagingSenderId: "632392089390",
+      appId: "1:632392089390:web:2cc5032f4397eb03"
+    })
 
 
   ],

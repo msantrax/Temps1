@@ -8,13 +8,7 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {
-
-
-      },
-      
-     
-      
+      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -24,50 +18,51 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-
-           
-			"assets": [
-				{
-				  "glob": "**/*",
-				  "input": "src/assets",
-				  "output": "/assets"
-				},
-				{
-				  "glob": "favicon.ico",
-				  "input": "src",
-				  "output": "/"
-				}
-			  ],
-           
-			"styles": [
-				{
-				  "input": "src/main.scss"
-				},
-				{
-				  "input": "src/highlightjs/material-light.scss"
-				},
-				{
-				  "input": "src/assets/pink-bluegrey.css",
-				  "lazy": true,
-				  "bundleName": "pink-bluegrey"
-				},
-				{
-				  "input": "src/assets/deeppurple-amber.css",
-				  "lazy": true,
-				  "bundleName": "deeppurple-amber"
-				},
-				{
-				  "input": "src/assets/indigo-pink.css",
-				  "lazy": true,
-				  "bundleName": "indigo-pink"
-				},
-				{
-				  "input": "src/assets/purple-green.css",
-				  "lazy": true,
-				  "bundleName": "purple-green"
-				}
-			  ],
-           
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src",
+                "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/ngx-auth-firebaseui/assets/",
+                "output": "./assets/"
+              }
+            ],
+            "styles": [
+              {
+                "input": "src/main.scss"
+              },
+              {
+                "input": "src/highlightjs/material-light.scss"
+              },
+              {
+                "input": "src/assets/pink-bluegrey.css",
+                "lazy": true,
+                "bundleName": "pink-bluegrey"
+              },
+              {
+                "input": "src/assets/deeppurple-amber.css",
+                "lazy": true,
+                "bundleName": "deeppurple-amber"
+              },
+              {
+                "input": "src/assets/indigo-pink.css",
+                "lazy": true,
+                "bundleName": "indigo-pink"
+              },
+              {
+                "input": "src/assets/purple-green.css",
+                "lazy": true,
+                "bundleName": "purple-green"
+              }
+            ],
             "scripts": []
           },
           "configurations": {
@@ -98,7 +93,6 @@
           }
         },
         "serve": {
-		  
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "sorptionlab:build"
@@ -177,7 +171,6 @@
     }
   },
   "defaultProject": "sorptionlab",
-  
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
@@ -187,7 +180,4 @@
       "prefix": "app"
     }
   }
-  
-  
-  
 }

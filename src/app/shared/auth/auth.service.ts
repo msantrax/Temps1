@@ -61,6 +61,7 @@ export class AuthService {
         this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
     }
 
+
     loginEmail(email: string, password: string) {
         this.afAuth
         .auth
@@ -73,6 +74,7 @@ export class AuthService {
         });
     }
 
+
     isLoggedIn() {
         if (this.userDetails == null ) {
           return false;
@@ -81,7 +83,6 @@ export class AuthService {
           return true;
         }
     }
-
 
     logout() {
         this.avatar = this.avatar_path;

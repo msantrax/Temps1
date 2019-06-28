@@ -17,6 +17,9 @@ import {ScrollDispatchModule} from "@angular/cdk/scrolling";
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 
+import {DatagateService} from "../../shared/servergate/datagate.service";
+import {HttpTest} from "../../shared/servergate/httptest";
+
 @Component({
   selector: 'sandbox',
   templateUrl: './sandbox.html',
@@ -28,14 +31,18 @@ export class Sandbox implements OnInit {
   sb_jserverout : string = "init state";
   sb_current_time : string;
   pipe = new DatePipe('en-US');
-
+  httptest : HttpTest
 
   constructor(public _componentPageTitle: ComponentPageTitle,
               public appstate : AppState,
               private spinner: NgxSpinnerService,
               private _snackBar: MatSnackBar,
               private fns: AngularFireFunctions,
-              private http: HttpClient) {}
+              private http: HttpClient,
+              private datagate : DatagateService) {
+
+
+  }
 
 
   ngOnInit(): void {
@@ -50,6 +57,16 @@ export class Sandbox implements OnInit {
   }
 
 
+  testh1(){
+
+    this.datagate.getTest().subscribe( (data: HttpTest) => {
+
+      this.httptest = {...data};
+      console.log(this.httptest);
+
+    });
+
+  }
 
 
   test2(){
@@ -63,7 +80,6 @@ export class Sandbox implements OnInit {
           "Accept": "*/*",
           "Cache-Control": "no-cache",
           "Authorization": "Basic b3B1czpvcHVz",
-          "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json"
       },
       json: true,
