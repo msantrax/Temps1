@@ -6,7 +6,8 @@ import {
   OnInit,
   OnDestroy,
 } from '@angular/core';
-
+import {CommonModule} from '@angular/common';
+import {ActivatedRoute} from '@angular/router';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -14,11 +15,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTooltipModule} from '@angular/material/tooltip';
 
-import {CommonModule} from '@angular/common';
-import {ActivatedRoute} from '@angular/router';
+
 import {Subscription} from 'rxjs';
 import {map, filter} from 'rxjs/operators';
 import {AuthService} from "./auth.service";
+
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @Component({

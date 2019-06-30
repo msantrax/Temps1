@@ -4,11 +4,16 @@ import { CommonModule } from '@angular/common';
 import { AuthService } from './auth.service';
 
 import {UserPicker} from "./user-picker";
-import {MatButtonModule, MatGridListModule, MatIconModule, MatMenuModule, MatTooltipModule} from "@angular/material";
+import {MatButtonModule,
+        MatGridListModule,
+        MatIconModule,
+        MatMenuModule,
+        MatTooltipModule,
 
-//import { CtrlloginComponent } from './ctrllogin.component';
-//import { CtrlregisterComponent }  from './ctrlregister.component';
-
+} from "@angular/material";
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
@@ -20,18 +25,15 @@ import {MatButtonModule, MatGridListModule, MatIconModule, MatMenuModule, MatToo
     MatGridListModule,
     MatTooltipModule,
 
-
+    NgxAuthFirebaseUIModule,
+    BrowserAnimationsModule
   ],
   
   declarations: [
       UserPicker,
-      //CtrlloginComponent,
-      //CtrlregisterComponent
 
   ],
   exports: [
-      //CtrlloginComponent,
-      //CtrlregisterComponent,
        UserPicker
 
   ],

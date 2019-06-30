@@ -91,6 +91,13 @@ export class AuthService {
     }
 
 
+    printUser(event) {
+        console.log(event);
+    }
+
+    printError(event) {
+        console.error(event);
+    }
 
 
 
